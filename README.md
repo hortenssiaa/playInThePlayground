@@ -1,5 +1,5 @@
 # 🤹🏻‍♀️ Projects Played In The Playground
-Click a foler and check out it's brief introduction & preview.<br>
+Click a foler🗂 and check out🔎 it's brief introduction🏷 & preview📱.<br>
 <br>
 
 1. [Symbol Roller App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SymbolRoller) 
