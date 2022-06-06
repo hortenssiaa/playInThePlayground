@@ -10,4 +10,4 @@
   - UICollectionViewDataSource
   - UICollectionViewDelegateFlowLayout
 <br><br>
-<img width="300" alt="StockRankApp" src="https://user-images.githubusercontent.com/16066576/172056826-e89a4d02-9102-4fd5-a70c-83e1961d5728.gif">
+<img width="300" alt="StockRankApp" src="https://user-images.githubusercontent.com/16066576/172107873-b425f50d-5ee9-448d-bfcc-6c0b19d821db.gif">
