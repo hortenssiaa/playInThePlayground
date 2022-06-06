@@ -2,9 +2,8 @@
 ### What's For?
 - You can find Stock Rank on this app.
 - Built this app for understanding UI Collection View.
-<br>
 
-### What I Learned?
+### What I've Learned?
 - Learned how to draw Lists with UI Collection View and Custom Collection View Cell.
 - Studied UI Collection view and it's protocols.
   - UICollectionViewDataSource
