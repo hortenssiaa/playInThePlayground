@@ -15,8 +15,10 @@
 		948CD2442812F01C003DC0C4 /* InstaSearchViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD2432812F01C003DC0C4 /* InstaSearchViewTests.swift */; };
 		948CD24E2812F01C003DC0C4 /* InstaSearchViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD24D2812F01C003DC0C4 /* InstaSearchViewUITests.swift */; };
 		948CD2502812F01C003DC0C4 /* InstaSearchViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948CD24F2812F01C003DC0C4 /* InstaSearchViewUITestsLaunchTests.swift */; };
-		B3FA09C528F0182800CD4EDE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA09C428F0182800CD4EDE /* SearchViewController.swift */; };
-		B3FA09C728F0186D00CD4EDE /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA09C628F0186D00CD4EDE /* ResultCell.swift */; };
+		B387E0CB28F3FD5800A98490 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387E0CA28F3FD5800A98490 /* SearchViewController.swift */; };
+		B387E0CD28F3FD8100A98490 /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387E0CC28F3FD8100A98490 /* ResultCell.swift */; };
+		B387E0CF28F40EC900A98490 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387E0CE28F40EC900A98490 /* HomeViewController.swift */; };
+		B387E0D128F40EEB00A98490 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B387E0D028F40EEB00A98490 /* HomeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +51,10 @@
 		948CD2492812F01C003DC0C4 /* InstaSearchViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaSearchViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		948CD24D2812F01C003DC0C4 /* InstaSearchViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSearchViewUITests.swift; sourceTree = "<group>"; };
 		948CD24F2812F01C003DC0C4 /* InstaSearchViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaSearchViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B3FA09C428F0182800CD4EDE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		B3FA09C628F0186D00CD4EDE /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		B387E0CA28F3FD5800A98490 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B387E0CC28F3FD8100A98490 /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		B387E0CE28F40EC900A98490 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B387E0D028F40EEB00A98490 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +108,10 @@
 				948CD22C2812F01B003DC0C4 /* AppDelegate.swift */,
 				948CD22E2812F01B003DC0C4 /* SceneDelegate.swift */,
 				948CD2322812F01B003DC0C4 /* Main.storyboard */,
-				B3FA09C628F0186D00CD4EDE /* ResultCell.swift */,
-				B3FA09C428F0182800CD4EDE /* SearchViewController.swift */,
+				B387E0D028F40EEB00A98490 /* HomeCell.swift */,
+				B387E0CE28F40EC900A98490 /* HomeViewController.swift */,
+				B387E0CC28F3FD8100A98490 /* ResultCell.swift */,
+				B387E0CA28F3FD5800A98490 /* SearchViewController.swift */,
 				948CD2352812F01B003DC0C4 /* Assets.xcassets */,
 				948CD2372812F01B003DC0C4 /* LaunchScreen.storyboard */,
 				948CD23A2812F01B003DC0C4 /* Info.plist */,
@@ -261,9 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FA09C528F0182800CD4EDE /* SearchViewController.swift in Sources */,
+				B387E0CF28F40EC900A98490 /* HomeViewController.swift in Sources */,
+				B387E0CB28F3FD5800A98490 /* SearchViewController.swift in Sources */,
 				948CD22D2812F01B003DC0C4 /* AppDelegate.swift in Sources */,
-				B3FA09C728F0186D00CD4EDE /* ResultCell.swift in Sources */,
+				B387E0CD28F3FD8100A98490 /* ResultCell.swift in Sources */,
+				B387E0D128F40EEB00A98490 /* HomeCell.swift in Sources */,
 				948CD22F2812F01B003DC0C4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
