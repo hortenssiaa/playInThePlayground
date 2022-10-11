@@ -18,6 +18,7 @@ class FrameworkListViewController: UIViewController {
 
         collectionView.dataSource = self
         collectionView.delegate = self
+        // delegate : layout에관해서도 위임 & click시에도 동작관련 위임이있다!
         
         // Collection View의 Estimate size를 코드로 Automatic -> None 변경하는 방법
         if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
@@ -63,5 +64,15 @@ extension FrameworkListViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+}
+
+// delegate: click 이 되었을때, 해당 클릭에 관한 위임
+extension FrameworkListViewController: UICollectionViewDelegate {
+    // item이 클릭되었을때, 호출되는 메소드
+    // 선택이 된 item에 대해서, 위임자인 self (Frameworklistviewconteroller) 가 알아서 처리해! 라는 뜻
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let framework = frameList[indexPath.item]
+        print(">> selected: \(framework.name)")
     }
 }
