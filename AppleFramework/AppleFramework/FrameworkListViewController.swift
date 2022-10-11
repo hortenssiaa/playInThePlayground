@@ -20,6 +20,8 @@ class FrameworkListViewController: UIViewController {
         collectionView.delegate = self
         // delegate : layout에관해서도 위임 & click시에도 동작관련 위임이있다!
         
+        navigationController?.navigationBar.topItem?.title = "🤔 Apple Frameworks"
+        
         // Collection View의 Estimate size를 코드로 Automatic -> None 변경하는 방법
         if let flowlayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowlayout.estimatedItemSize = .zero

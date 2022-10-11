@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--🤔Apple Framework-->
+        <!--🤔Apple Frameworks-->
         <scene sceneID="f9s-lS-9yF">
             <objects>
                 <viewController storyboardIdentifier="FrameworkListViewController" id="Fgc-v5-kU6" customClass="FrameworkListViewController" customModule="AppleFramework" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,7 +76,7 @@
                             <constraint firstItem="aIR-qV-kh7" firstAttribute="top" secondItem="Qki-rH-27A" secondAttribute="top" id="y7R-9a-YFa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="🤔Apple Framework" id="mjk-ev-fMI"/>
+                    <navigationItem key="navigationItem" title="🤔Apple Frameworks" id="mjk-ev-fMI"/>
                     <connections>
                         <outlet property="collectionView" destination="aIR-qV-kh7" id="y6U-Vt-tR9"/>
                     </connections>
@@ -91,7 +91,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NeU-OM-bxc" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="tRO-vd-SZM">
-                        <rect key="frame" x="0.0" y="48" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
