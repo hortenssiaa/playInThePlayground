@@ -1,6 +1,7 @@
 # 🤹🏻‍♀️ Projects Played In The Playground
 Click a foler🗂 and check out🔎 it's brief introduction🏷 & preview📱.<br>
 <br>
+#### - Used Class: UICollectionView, UICollectionViewDataSource, UICollectionViewFlowLayout
 
 1. [Symbol Roller App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SymbolRoller) 
 2. [Simple Weather App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SimpleWeather)
@@ -9,3 +10,7 @@ Click a foler🗂 and check out🔎 it's brief introduction🏷 & preview📱.<b
 5. [Apple Framework App](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework)
 6. [Instagram Search App](https://github.com/hortenssiaa/playInThePlayground/tree/master/InstaSearchView)
 7. [NRC Onboarding App](https://github.com/hortenssiaa/playInThePlayground/tree/master/NRCOnboarding)
+<br>
+
+#### - Used Class: UICollectionViewDiffableDataSource, UICollectionViewCompositionalLayout
+8. [Apple Framework App (Advanced)](https://github.com/hortenssiaa/playInThePlayground/tree/master/NRCOnboarding) ← Advanced version of No.5
