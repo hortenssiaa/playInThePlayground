@@ -13,4 +13,4 @@ Click a foler🗂 and check out🔎 it's brief introduction🏷 & preview📱.<b
 <br>
 
 #### - Used Class: UICollectionViewDiffableDataSource, UICollectionViewCompositionalLayout
-8. [Apple Framework App (Advanced)](https://github.com/hortenssiaa/playInThePlayground/tree/master/NRCOnboarding) ← Advanced version of No.5
+8. [Apple Framework App (Advanced)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_improved) ← Advanced version of No.5
