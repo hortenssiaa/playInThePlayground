@@ -1,5 +1,5 @@
 # 🤹🏻‍♀️ Projects Played In The Playground
-Click a foler🗂 and check out🔎 it's brief introduction🏷 & preview📱.<br>
+Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱.<br>
 <br>
 #### - Used Class: UICollectionView, UICollectionViewDataSource, UICollectionViewFlowLayout
 
