@@ -16,3 +16,4 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 8. [Apple Framework App (Advanced)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_improved) ← Advanced version of No.5
 9. [HeadSpace Focus App](https://github.com/hortenssiaa/playInThePlayground/tree/master/HeadSpaceFocus)
 10. [Spotify Paywall App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SpotifyPaywall)
+11. [Apple Framework App (Modility)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Modality)  ← Modility View added version of No.8
