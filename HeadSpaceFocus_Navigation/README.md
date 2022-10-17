@@ -1,4 +1,4 @@
-## #12. HeadSpace Focus App (Added Navtigation)
+## #12. HeadSpace Focus App (Added Navtigation View)
 ### Used Class
 - UICollectionViewDiffableDataSource
 - UICollectionViewCompositionalLayout
