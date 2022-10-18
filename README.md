@@ -18,3 +18,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 10. [Spotify Paywall App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SpotifyPaywall)
 11. [Apple Framework App (Modility)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Modality)  ← Modility View added version of No.8
 12. [HeadSpace Focus App (Navigation)](https://github.com/hortenssiaa/playInThePlayground/tree/master/HeadSpaceFocus_Navigation)  ← Navigation View added version of No.9
+<br>
+
+#### - Combine
+13. [Publisher & Subscriber](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Publisher%20%26%20Subscriber.xcplaygroundpage/Contents.swift)
