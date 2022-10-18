@@ -12,7 +12,8 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 7. [NRC Onboarding App](https://github.com/hortenssiaa/playInThePlayground/tree/master/NRCOnboarding)
 <br>
 
-#### - Used Class: UICollectionViewDiffableDataSource, UICollectionViewCompositionalLayout
+#### - Used Class: UICollectionViewDiffableDataSource, UICollectionViewCompositionalLayout 
+##### *(+) Modility, Navigation*
 8. [Apple Framework App (Advanced)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_improved) ← Advanced version of No.5
 9. [HeadSpace Focus App](https://github.com/hortenssiaa/playInThePlayground/tree/master/HeadSpaceFocus)
 10. [Spotify Paywall App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SpotifyPaywall)
