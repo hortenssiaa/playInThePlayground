@@ -1,7 +1,7 @@
 # 🤹🏻‍♀️ Projects Played In The Playground
 Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱.<br>
 <br>
-#### - Used Class: UICollectionView, UICollectionViewDataSource, UICollectionViewFlowLayout
+#### - Used Class: UICollectionViewDataSource, UICollectionViewFlowLayout
 
 1. [Symbol Roller App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SymbolRoller) 
 2. [Simple Weather App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SimpleWeather)
