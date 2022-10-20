@@ -4,6 +4,19 @@ import Foundation
 import Combine
 
 // Publisher & Subscriber
+/*
+ Subscriber
+ 1) Publisher에게 데이터를 요청함
+ 2) Input, Failure type 정의
+ 3) Publisher 구독후, 갯수 정함
+ 4) pip line 취소 가능 (= 구독취소 가능)
+
+ Built-in Subscriber
+ 1) assign
+ : Publisher가 제공한 데이터를, 특정 객체의 키패스에 할당
+ 2) sink
+ : Publisher가 제공한 데이터를 받는 closure 제공
+ */
 
 // 1. 'Just' publisher : built in publisher
 // 1) Data 1개만 보내보기
