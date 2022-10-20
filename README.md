@@ -24,3 +24,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 #### - Combine
 13. [Publisher & Subscriber](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Publisher%20%26%20Subscriber.xcplaygroundpage/Contents.swift)
 14. [Subject](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Subject.xcplaygroundpage/Contents.swift)
+15. [Subscription](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Subscription.xcplaygroundpage/Contents.swift)
+16. [@Published](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Published.xcplaygroundpage/Contents.swift)
+17. [Foundation and Combine](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Foundation%20and%20Combine.xcplaygroundpage/Contents.swift)
+18. [Scheduler](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Scheduler.xcplaygroundpage/Contents.swift)
