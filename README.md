@@ -28,3 +28,6 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 16. [@Published](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Published.xcplaygroundpage/Contents.swift)
 17. [Foundation and Combine](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Foundation%20and%20Combine.xcplaygroundpage/Contents.swift)
 18. [Scheduler](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Scheduler.xcplaygroundpage/Contents.swift)
+19. [Operator - Map & Filter](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20map%20%26%20filter.xcplaygroundpage/Contents.swift)
+20. [Operator - CombineLatest](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20combineLatest.xcplaygroundpage/Contents.swift)
+21. [Operator - RemoveDuplicates & CompactMap & IgnoreOutput & Prefix](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20removeDup%20%26%20compactMap.xcplaygroundpage/Contents.swift)
