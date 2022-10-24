@@ -31,3 +31,5 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 19. [Operator - Map & Filter](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20map%20%26%20filter.xcplaygroundpage/Contents.swift)
 20. [Operator - CombineLatest](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20combineLatest.xcplaygroundpage/Contents.swift)
 21. [Operator - RemoveDuplicates & CompactMap & IgnoreOutput & Prefix](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20removeDup%20%26%20compactMap.xcplaygroundpage/Contents.swift)
+##### * combine applyed project
+21. [Apple Framework App (Combine)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine)  ← Combine applyed version of No.11
