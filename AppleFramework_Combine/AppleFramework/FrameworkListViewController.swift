@@ -48,8 +48,7 @@ class FrameworkListViewController: UIViewController {
             .sink { [unowned self] framework in
             let storyboard = UIStoryboard(name: "Detail", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "FrameworkDetailViewController") as! FrameworkDetailViewController
-            vc.framework = framework
-            // vc.modalPresentationStyle = .automatic
+                vc.framework.send(framework)
             self.present(vc, animated: true)
         }.store(in: &subscriptions) // subscription이 생겼으니, subscriptions통에 넣어준다.
         
