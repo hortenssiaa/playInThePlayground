@@ -1,7 +1,7 @@
 # 🧮 Network in iOS
 ### - URLSession을 이용해서 HTTP 방식으로 서버와 소통
-    • URL Request
-    • URL Response
+    • HTTP Request
+    • HTTP Response
 <br>
 
 ### - Networking 하기위한 3가지 설정
