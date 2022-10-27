@@ -35,7 +35,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 21. [Apple Framework App (Combine)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine)  ← Combine applied version of No.11
 <br>
 
-#### - Network [(Network)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Network-in-iOS)
+#### - [Network](https://github.com/hortenssiaa/playInThePlayground/tree/master/Network-in-iOS)
 22. [URLSession](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/URLSession.xcplaygroundpage/Contents.swift)
 23. [Decode Data](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Decode%20Data.xcplaygroundpage/Contents.swift)
 23. [Fetch Method](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Fetch%20Method.xcplaygroundpage/Contents.swift)
