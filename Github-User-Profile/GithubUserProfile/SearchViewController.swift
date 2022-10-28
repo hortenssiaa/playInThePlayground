@@ -102,5 +102,29 @@ extension UserProfileViewController: UISearchBarDelegate {
         }
         urlComponents.queryItems = queryItem
         
+        // url request에 필요한것 : url base + url path + url params + url header
+        var request = URLRequest(url: urlComponents.url!) // http request시 header추가
+        header.forEach { (key: String, value: String) in // header에 필요한 내용들 돌어가면서 넣기
+            request.addValue(value, forHTTPHeaderField: key)
+        }
+        
+        URLSession.shared
+            .dataTaskPublisher(for: request)
+            .tryMap { result -> Data in // error check, result or (data: Data, response: URLResponse)
+                guard let response = result.response as? HTTPURLResponse,
+                      (200..<300).contains(response.statusCode) else {
+                    let response = result.response as? HTTPURLResponse
+                    let statusCode = response?.statusCode ?? -1 // response가 nil일수도 있고, 그러면 -1
+                    throw NetworkError.responseError(statusCode: statusCode)
+                }
+                return result.data
+            }
+            .decode(type: UserProfile.self, decoder: JSONDecoder())
+            .receive(on: RunLoop.main)
+            .sink { completion in
+                print("completion: \(completion)")
+            } receiveValue: { user in
+                self.user = user
+            }.store(in: &subscription)
     }
 }
