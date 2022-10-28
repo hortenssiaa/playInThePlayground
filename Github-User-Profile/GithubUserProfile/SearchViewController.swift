@@ -62,7 +62,19 @@ class UserProfileViewController: UIViewController {
     }
     
     private func updateUser(_ user: UserProfile?) {
-        
+        guard let user = user else {
+            self.nameLabel.text = "n/a"
+            self.loginLabel.text = "n/a"
+            self.thumbnail.image = nil
+            self.followerLabel.text = "n/a"
+            self.followingLabel.text = "n/a"
+            return
+        }
+        self.nameLabel.text = user.name
+        self.loginLabel.text = user.login
+        self.thumbnail.image = nil
+        self.followerLabel.text = "follower: \(user.followers)"
+        self.followingLabel.text = "following: \(user.following)"
     }
 }
 
@@ -75,6 +87,20 @@ extension UserProfileViewController: UISearchResultsUpdating {
 
 extension UserProfileViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        print("search button clicked: \(searchBar.text)")
+        // network 요청 & 받기
+        guard let keyword = searchBar.text, !keyword.isEmpty else { return } // 빈 문자열일 수 있으니
+        
+        // url
+        let base = "https://api.github.com/" // 1. 스키마 & 도메인 주소
+        let path = "users/\(keyword)" // 2.
+        let params: [String: String] = [:] // 3. parameter (optional)
+        let header: [String: String] = ["Content-Type": "application/json"] // 4.
+        
+        var urlComponents = URLComponents(string: base + path)!
+        let queryItem = params.map { (key: String, value: String) in
+            URLQueryItem(name: key, value: value)
+        }
+        urlComponents.queryItems = queryItem
+        
     }
 }
