@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Resource<T: Decodable> {
+struct Resource<T: Decodable> { // url request 만들어주는 역할 
     var base: String
     var path: String
     var params: [String: String]

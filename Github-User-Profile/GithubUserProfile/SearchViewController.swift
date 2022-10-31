@@ -17,6 +17,8 @@ class UserProfileViewController: UIViewController {
     // search control
     // network
     
+    let network = NetworkService(configuration: .default)
+    
     /*
      private(set) : 외부에서는 읽기만 가능(getter), 내부에서는 읽기/쓰기 모두 가능 (setter/getter) 간소화된 버전
      - user 데이터가 update 될때마다 setting
@@ -101,7 +103,8 @@ extension UserProfileViewController: UISearchBarDelegate {
         // network 요청 & 받기
         guard let keyword = searchBar.text, !keyword.isEmpty else { return } // 빈 문자열일 수 있으니
         
-        // url
+        // url - Resource
+        /*    (previous version of Combine)
         let base = "https://api.github.com/" // 1. 스키마 & 도메인 주소
         let path = "users/\(keyword)" // 2.
         let params: [String: String] = [:] // 3. parameter (optional)
@@ -121,8 +124,23 @@ extension UserProfileViewController: UISearchBarDelegate {
         header.forEach { (key: String, value: String) in // header에 필요한 내용들 돌어가면서 넣기
             request.addValue(value, forHTTPHeaderField: key)
         }
+         */
+        let resource = Resource<UserProfile>( // UserProfile을 받기위한 Resource이기 때문에, <UserProfile>
+            base: "https://api.github.com/",
+            path: "users/\(keyword)",
+            params: [:],
+            header: ["Content-Type": "application/json"])
         
-        URLSession.shared
+        // URL Session - NetworkService
+        /*
+         * NetworkService.load(Recource에서 만든 url request용 url)
+         - resource(== url) 넘겨주면, 필요한 뽑아주고
+         - 뽑은 url request로, session에게 dataTask Publisher만들어줘!
+         - 그리고, 데이터 및 에러 확인 까지 완료하고,
+         - 데이터 받아서, 넘겨주는것까지 완료하는 메소드이다.
+         */
+        /*    (previous version of Combine)
+         URLSession.shared
             .dataTaskPublisher(for: request)
             .tryMap { result -> Data in // error check, result or (data: Data, response: URLResponse)
                 guard let response = result.response as? HTTPURLResponse,
@@ -145,5 +163,19 @@ extension UserProfileViewController: UISearchBarDelegate {
             } receiveValue: { user in
                 self.user = user
             }.store(in: &subscription)
+         */
+        network.load(resource) // 위 Resource에서 만든 url 넢는다.
+            .receive(on: RunLoop.main) // scheduling
+            .sink { completion in
+                switch completion {
+                case .failure(let error):
+                    self.user = nil
+                case .finished: break
+                }
+            } receiveValue: { user in
+                self.user = user
+            }.store(in: &subscription)
+
+        
     }
 }
