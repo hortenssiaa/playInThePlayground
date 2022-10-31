@@ -32,11 +32,13 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 20. [Operator - CombineLatest](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20combineLatest.xcplaygroundpage/Contents.swift)
 21. [Operator - RemoveDuplicates & CompactMap & IgnoreOutput & Prefix](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Operator%20-%20removeDup%20%26%20compactMap.xcplaygroundpage/Contents.swift)
 ##### * combine applied project
-21. [Apple Framework App (Combine)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine)  ← Combine applied version of No.11
+22. [Apple Framework App (Combine)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine)  ← Combine applied version of No.11
 <br>
 
 #### - [Network](https://github.com/hortenssiaa/playInThePlayground/tree/master/Network-in-iOS)
-22. [URLSession](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/URLSession.xcplaygroundpage/Contents.swift)
-23. [Decode Data](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Decode%20Data.xcplaygroundpage/Contents.swift)
-23. [Fetch Method](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Fetch%20Method.xcplaygroundpage/Contents.swift)
-24. [Using Combine](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Using%20Combine.xcplaygroundpage/Contents.swift)
+23. [URLSession](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/URLSession.xcplaygroundpage/Contents.swift)
+24. [Decode Data](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Decode%20Data.xcplaygroundpage/Contents.swift)
+25. [Fetch Method](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Fetch%20Method.xcplaygroundpage/Contents.swift)
+26. [Using Combine](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Using%20Combine.xcplaygroundpage/Contents.swift)
+##### * Network applied project
+27. [Github user-profile-search App](https://github.com/hortenssiaa/playInThePlayground/tree/master/Github-User-Profile)
