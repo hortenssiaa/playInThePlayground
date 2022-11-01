@@ -1,6 +1,11 @@
 # 🤹🏻‍♀️ Projects Played In The Playground
 Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱.<br>
 <br>
+
+#### - Swift Grammer [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer)
+- Data type
+<br>
+
 #### - Used Class: UICollectionViewDataSource, UICollectionViewFlowLayout
 
 1. [Symbol Roller App](https://github.com/hortenssiaa/playInThePlayground/tree/master/SymbolRoller) 
@@ -35,7 +40,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 22. [Apple Framework App (Combine)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine)  ← Combine applied version of No.11
 <br>
 
-#### - [Network](https://github.com/hortenssiaa/playInThePlayground/tree/master/Network-in-iOS)
+#### - Network [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Network-in-iOS)
 23. [URLSession](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/URLSession.xcplaygroundpage/Contents.swift)
 24. [Decode Data](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Decode%20Data.xcplaygroundpage/Contents.swift)
 25. [Fetch Method](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Fetch%20Method.xcplaygroundpage/Contents.swift)
