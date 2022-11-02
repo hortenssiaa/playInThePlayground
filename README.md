@@ -3,7 +3,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 <br>
 
 #### - Swift Grammer [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer)
-- Data type
+- Data type, Collection, Enum
 <br>
 
 #### - Used Class: UICollectionViewDataSource, UICollectionViewFlowLayout
