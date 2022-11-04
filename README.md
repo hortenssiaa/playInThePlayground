@@ -5,6 +5,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 #### - Swift Grammer [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer)
 - Data type, Collection, Function
 - Conditional statement, Repetitive statement
+- Structure, Class
 - Optional (+binding), Enum
 <br>
 
