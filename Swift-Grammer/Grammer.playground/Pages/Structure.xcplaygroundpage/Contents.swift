@@ -1,7 +1,7 @@
 import UIKit
 
 /*
- Structure & Class
+ Structure (= 값 type) & Class (= reference(참조) type)
  : 데이터를 용도에 맞게 표현할때 용이
  - property, function 사용
  - 사용자정의 데이터 타입
