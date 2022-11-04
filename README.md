@@ -2,7 +2,7 @@
 Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱.<br>
 <br>
 
-#### - Swift Grammer [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer)
+#### - Swift Grammer [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages)
 - Data type, Collection, Function
 - Conditional statement, Repetitive statement
 - Structure, Class
