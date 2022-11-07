@@ -357,6 +357,6 @@ Structure (= 값 type) & Class (= reference(참조) type)
 - 사용자정의 data type
 - Structure 사용하기 위해서?
     1. 인스턴스 생성
-      > class, structure을 실제로 사용하기 위해 , 메모리에 생성하는 것을 뜻함!
+       > class, structure을 실제로 사용하기 위해 , 메모리에 생성하는 것을 뜻함!
 <br>
 
