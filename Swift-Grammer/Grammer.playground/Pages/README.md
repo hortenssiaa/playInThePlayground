@@ -360,3 +360,18 @@ Structure (= 값 type) & Class (= reference(참조) type)
        > class, structure을 실제로 사용하기 위해 , 메모리에 생성하는 것을 뜻함!
 <br>
 
+```swift
+struct User {
+    var nickName: String
+    var age: Int
+    
+    func info() {
+        print("\(nickName) \(age)")
+    }
+}
+
+var user = User(nickName: "hortenssiaa", age: 25)
+
+user.nickName = "niki" // property value 변경됨!
+user.info() // niki 25
+```
