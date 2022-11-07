@@ -74,9 +74,8 @@ greetings(friend: "Ken", me: "호텐샤")
 <br>
 
 #### 3.2 **전달인자 Lable (feat. from, to)**
-> 사용자입장; 매개변수의 역할을 명확하게 표현 가능
-
-> 코드 가독성 높아짐!
+- 매개변수의 역할을 명확하게 표현 가능
+- 코드 가독성 높아짐!
 ```swift
 func sendMessage(from myName: String, to name: String) -> String {
   return "Hello \(name)! I'm \(myName)."
@@ -85,9 +84,44 @@ func sendMessage(from myName: String, to name: String) -> String {
 sendMessage(from: "Hakyung", to: "Ken")
 // Hello Ken! I'm Hakyung.
 ```
-
 <br>
 
+#### 3.3 **전달인자 Lable 사용하고싶지 않다면? -> wild card _ 사용**
+```swift
+func sendMessage(_ name: String) -> String {
+    return "Hello, \(name)"
+}
+
+sendMessage("손하경")
+// Hello, 손하경
+```
+<br>
+
+#### 3.4 **전달인자 Lable 사용하고싶지 않다면? -> wild card _ 사용**
+```swift
+func sendMessage(_ name: String) -> String {
+    return "Hello, \(name)"
+}
+
+sendMessage("손하경")
+// Hello, 손하경
+```
+<br>
+
+#### 3.5 **가변 매개변수**
+- 몇개의 매개변수가 들어올지 모를때, ... 으로 표현
+- 0개 이상의 매개변수 가능. 
+- 가변매개변수로 받은 값은, 배열 [ ] 로써 사용 가능!
+    > 예) Hello ["Jake", "Ken", "Anne", "Tiffany"], I'm Hakyung"
+```swift
+func sendMessage(me: String, friends: String...) -> String {
+    return "Hello \(friends), I'm \(me)"
+}
+
+sendMessage(me: "Hakyung", friends: "Jake", "Ken", "Anne", "Tiffany")
+// Hello ["Jake", "Ken", "Anne", "Tiffany"], I'm Hakyung"
+```
+<br>
 
 ----
 <br>
