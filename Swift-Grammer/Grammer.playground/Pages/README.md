@@ -274,5 +274,89 @@ print(number!)
 <br>
 
 
+#### 6.1.2 **optional 비강제해제 (if-else)**
+- optional을 추출해서, 할당받을 변수(상수) 설정
+  > result
+- if-else으로..
+  - optional값이 잘 추출 됐으면 -> if 문 실행
+  - optional값이 nil이면 -> else 문 실행
+- if-else 문으로 추출시;
+  - 변수/상수는 if-else문 내에서만 사용 가능
+  - 안전함!
+```swift
+var number: Int? = nil
+
+if result = number { // optional 추출 성공
+    print(result) // optional 추출값 
+} else { // fail
+    print("optional binding fails")
+}
+
+// optional binding fails
+```
+<br>
+
+#### 6.1.3 **optional 비강제해제 (guard)**
+- guaurd 문으로 추출시;
+  - guard 다음으로 오는 함수 전체에서 사용 가능!
+  - 안전함! 
+```swift
+func test() {
+    let number: Int? = 3
+    guard let result = number else { return }
+    print(result)
+}
+
+test()
+// 3
+```
+<br>
+
+
+#### 6.1.4 **optional 자동해제 by compiler**
+- optional 값을 비교연산자 (==, <, >, etc.)로 비교시
+  - 딱 그때만! 컴파일러가 자동으로 optional값 해제시킴
+```swift
+let value: Int? = 3
+
+if value == 6 { // 비교시! 딱 이때만
+    print("value가 6입니다.")
+} else {
+    print("value가 6이 아닙니다.")
+}
+```
+<br>
+
+
+#### 6.1.5 **optional 묵시적 해제**
+- 값이 nil일수도, 아닐 수도 있을 경우
+  - nil이 아닌경우, 묵시적 해제됨
+    > 예) Int("12")
+    > 
+    > 예) Int("12a")
+```swift
+let string = "12"
+
+var stringToInt: Int? = Int(string) 
+// Int(string) 값이 nil일수도, Int형이 될수도 있으니 -> Optional
+
+print(stringToInt + 1)
+```
+<br>
+
+
 ----
 <br>
+
+
+
+### 7. [Structure](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Structure.xcplaygroundpage/Contents.swift)
+Structure (= 값 type) & Class (= reference(참조) type)
+: 데이터를 용도에 맞게 표현할 때 용이 
+- property, function 사용
+- 사용자정의 data type
+- Structure 사용하기 위해서?
+    1. 인스턴스 생성
+      > class, structure을 실제로 사용하기 위해 , 메모리에 생성하는 것을 뜻함!
+<br>
+
