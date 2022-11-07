@@ -126,3 +126,40 @@ sendMessage(me: "Hakyung", friends: "Jake", "Ken", "Anne", "Tiffany")
 ----
 <br>
 
+
+### 4. [Conditional Statement](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Conditional%20Statement.xcplaygroundpage/Contents.swift)
+
+#### 4.1 **if-else**
+```swift
+let animal = "pig"
+
+if animal == "dog" {
+    print("미성년자")
+} else if animal == "cat" {
+    print("고양이 사료주기")
+} else {
+    print("해당하는 동물 사료가 없습니다.")
+}
+
+// 해당하는 동물 사료가 없습니다.
+```
+<br>
+
+#### 4.2 **switch-casee**
+```swift
+let color = "pink"
+
+switch color {
+case "blue":
+    print("파란색입니다.")
+case "green":
+    print("초록색입니다.")
+case "pink"
+    print("핑크색입니다.")
+default:
+    print("찾는 색상이 없습니다.")
+}
+
+// 핑크색입니다.
+```
+<br>
