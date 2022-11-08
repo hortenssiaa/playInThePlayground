@@ -539,7 +539,12 @@ cat.gender = "male" // X (error) -> Class는 let instance여도 변경가능하�
                 averagePrice = newValue / quantity
             }
         ```
-
+- private(set) 이란?
+    - 외부에서는 getter(읽기)만 가능하고, 
+    - 내부에서는 setter/getter (읽기쓰기) 다 가능하게 
+        ```swift
+            @Published private(set) var user: UserProfile
+        ```
 
 <br>
 
@@ -562,7 +567,7 @@ var stock = Stock(averagePrice: 2300, quantity: 3)
 stock.purchasePrice = 3000 // O
 ```
 <br>
-
+<br>
 
 
 
