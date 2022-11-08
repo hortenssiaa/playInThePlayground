@@ -516,3 +516,135 @@ cat.name = "tensha" // 변경 O
 cat.gender = "male" // X (error) -> Class는 let instance여도 변경가능하지만, gender은 let property !!!
 ```
 <br>
+<br>
+
+
+
+#### 9.2 **계산 property**
+- class, structure, enum 에서사용 가능!
+- property에 getter / setter
+    - 값 직접 저장X
+        > -> getter/setter로 property/value 직접 접근!
+        1. set 매개변수 이름 지정시
+        ```swift
+            set(newPrice) {
+                averagePrice = newPrice / quantity
+            }
+        ```
+
+        2. set 매개변수 이름 지정 X
+            - default 매개변수 이름: ***newValue*** !!!!
+        ```swift
+            set {
+                averagePrice = newValue / quantity
+            }
+        ```
+
+
+<br>
+
+```swift
+struct Stock {
+    var averagePrice: Int
+    var quantity: Int
+    var purchasePrice: Int {
+        get {
+            return averagePrice * quantity
+        }
+        
+        set {
+            averagePrice = newValue / quantity
+        }
+    }
+}
+
+var stock = Stock(averagePrice: 2300, quantity: 3)
+stock.purchasePrice = 3000 // O
+```
+<br>
+
+
+
+
+
+#### 9.3 **property observer**
+- property 의 값의 변화를 관찰 & 반영
+- 새로운 값이 기존값과 같더라도, 변화시 property observer 호출됨!
+    - property가 set 될때마다 호출됨
+- 사용 가능한 경우:
+    1. 저장 property
+    2. overriding 된 property
+
+<br>
+
+
+##### 9.3.1 **저장 property**
+1. willSet
+    - 값이 저장되기 직전에 호출됨
+    - 새로 저장될 property 값을 상수매개변수로 전달
+      > (혹은, default매개변수 : newValue) 
+
+<br>
+2. didSet
+    - 값이 저장된 직후에 호출됨
+    - property 의 기존값을 상수매개변수로 전달
+      > (혹은, default매개변수 : oldValue)
+
+```swift
+class Account {
+    var credit: Int = 0 {
+        // willSet(setName) {
+        willSet {
+            print("잔액이 \(credit)원에서 \(newValue)원으로 변경될 예정입니다.")
+        }
+        
+        // didSet(setName) {
+        didSet {
+            print("잔액이 \(oldValue)원에서 \(credit)원으로 변경되었습니다.")
+        }
+    }
+}
+
+var account = Account()
+account.credit = 20000
+// 잔액에 0원에서 20000원으로 변경될 예정입니다.
+// 잔액이 0원에서 20000원으로 변경되었습니다. 
+```
+<br>
+
+
+
+#### 9.4 **type property**
+- static 으로 정의!
+- instance 생성 X 
+    - -> 객체내 property에 접근
+- static 변수(var)시, 값변경 가능 !
+- 저장 property (var/let), 연산 property (setter/getter) 에서만 사용 가능
+
+<br>
+
+```swift
+struct SomeStructure {
+    // 저장 property 
+    static var storedTypeProperty = "Some value."
+    static let storedTypeProperty_Let = "Some value."
+    
+    // 연산 proiperty (getter)
+    static var computedTypeProperty: Int {
+        return 1
+    }
+}
+
+SomeStructure.storedTypeProperty = "hello" // O
+SomeStructure.storedTypeProperty_Let = "Change value!!!" // X
+```
+
+
+<br>
+
+
+
+----
+<br>
+
+
