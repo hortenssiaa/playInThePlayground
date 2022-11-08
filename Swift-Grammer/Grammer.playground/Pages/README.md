@@ -480,21 +480,39 @@ user3 = nil // deinit user
 <br>
 
 ```swift
+// ex-Structure 1)
 struct Dog {
     var name: String
     let gender: String
 }
 
-// ex 1) 
+// ex 1.1) 
 var dog = Dog(name: "Ttotto", gender: "Male")
 print(dog) 
 
 dog.name = "Tetti"
 dog.gender = "Female" // error -> gender은 let property!
 
-// ex 2)
+// ex 1.2)
 let dog2 = Dog(name: "Purry", gender: "Female")
 
 dog2.name = "hakyung" // error -> dog2는 let instance!
+
+
+// ex-Class 2)
+Class Cat { 
+    var name: String
+    var gencer: String
+    
+    init(name: String, gender: String) {
+        self.name = name
+        self.gender = gender
+    }
+}
+
+// ex 2.1)
+let cat = Cat(name: "Hotkong", gender: "Female")
+cat.name = "tensha" // 변경 O
+cat.gender = "male" // X (error) -> Class는 let instance여도 변경가능하지만, gender은 let property !!!
 ```
 <br>
