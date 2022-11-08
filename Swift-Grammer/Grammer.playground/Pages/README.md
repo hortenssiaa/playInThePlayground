@@ -585,6 +585,7 @@ stock.purchasePrice = 3000 // O
       > (혹은, default매개변수 : newValue) 
 
 <br>
+
 2. didSet
     - 값이 저장된 직후에 호출됨
     - property 의 기존값을 상수매개변수로 전달
