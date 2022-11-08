@@ -2,16 +2,16 @@
 ### Contents 🗂
 : Click & see a quick overview of Swift grammer!🤓
 
-1. [Basic Data Type](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-1-basic-data-type)
-2. [Collection](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-2-collection)
-3. [Function](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-3-function)
-4. [Conditional Statement](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-4-conditional-statement)
-5. [Repetitive Statement](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-5-repetitive-statement)
-6. [Optional](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages/#%EF%B8%8F-6-optional)
-- 6.1. [Optional Binding](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-61-optional-binding)
-7. [Structure](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-7-structure)
-8. [Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-8-class)
-9. [Property](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-9-property)
+1. [Basic Data Type](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-1-basic-data-type-code)
+2. [Collection](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-2-collection-code)
+3. [Function](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-3-function-code)
+4. [Conditional Statement](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-4-conditional-statement-code)
+5. [Repetitive Statement](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-5-repetitive-statement-code)
+6. [Optional](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages/#%EF%B8%8F-6-optional-code)
+- 6.1. [Optional Binding](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-61-optional-binding-code)
+7. [Structure](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-7-structure-code)
+8. [Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-8-class-code)
+9. [Property](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-9-property-code)
 
 
 ----
