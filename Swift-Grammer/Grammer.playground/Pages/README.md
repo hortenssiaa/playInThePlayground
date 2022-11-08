@@ -61,7 +61,7 @@
 
 #### 3.1 **매개변수 기본값 세팅**
 ```swift
-func greetings(friend: String, me: String = "Hakyung" {
+func greetings(friend: String, me: String = "Hakyung") {
   print("Hello \(friend), I'm \(me).")
 }
     
@@ -352,7 +352,7 @@ print(stringToInt + 1)
 
 ### 7. [Structure](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Structure.xcplaygroundpage/Contents.swift)
 Structure (= value(값) type) & Class (= reference(참조) type)
-: 데이터를 용도에 맞게 표현할 때 용이 
+- 데이터를 용도에 맞게 표현할 때 용이 
 - property, function 사용
 - 사용자정의 data type
 - Structure 사용하기 위해서?
@@ -384,31 +384,117 @@ user.info() // niki 25
 
 ### 8. [Class](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Class%20init.xcplaygroundpage/Contents.swift)
 Structure (= value(값) type) & Class (= reference(참조) type)
-: 데이터를 용도에 맞게 표현할 때 용이 
+- 데이터를 용도에 맞게 표현할 때 용이 
 - property, function 사용
 - init (initialize)
-    1. 인스턴스 사용하기 위한 초기화
+    - 인스턴스 사용하기 위한 초기화
        > property를 초기화한다!
 - de-init
-  : Class instance에만 de-init 가능
-  1. 
+    - Class instance에만 de-init 가능 
+    - Swift는, instance 가 더이상 필요하지 않을때 -> 자동으로 메모리 소멸시킴!
+    - Class instance 에 nil 을 넣으면 -> 더이상 필요X instance 라고 판단
+        > user3 = nil
+         1. instance 가 메모리에서 해제되기 직전에 호출
+            > deinit { }
+         2. class instance와 관련하여, 정의작업!
 <br>
 
 ```swift
-class Dog {
-    var name: String
+class User {
+    var nickname: String
     var age: Int
     
-    init() { }
+    init(nickname: String, age: Int) {
+        self.nickname = nickname
+        self.age = age
+    }
+    
+    init(age: Int) {
+        self.nickname = "Hortenssiaa"
+        self.age = age
+    }
+    
+    deinit {
+        print("deinit user")
+    }
     
     func introduce() {
-        print("name: \(name), age: \(age)")
+        print("nickname: \(nickname), age: \(age)")
     }
 }
 
-var dog = Dog()
-dog
+var user = User(nickname: "hakyung", age: 25)
+user.nickname // hakyung
+user.age // 25
+
+var user2 = User(age: 26)
+user2.nickname // Hortenssiaa
+user2.age // 26
+
+var user3: User? = User(age: 23) // optional
+user3 = nil // deinit user
 ```
 
+<br>
 
 
+----
+<br>
+
+
+
+
+### 9. [Property](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Property.xcplaygroundpage/Contents.swift)
+1. 저장형 property
+2. 계산 property
+3. property observer
+    > willSet, didSet
+    1. 저장 property observer
+    2. overriding 된 property
+4. type property
+<br>
+
+
+#### 9.1 **저장형 property**
+- 변수(var), 상수(let), struct/class 멤버변수
+    - Structure은, value(값) type -> let / var instance에 따라 영향 O !!!
+    - ↔️ Class는, reference(참조) type -> 영향 X ! 
+        > but, 해당 클래스 내의 property의 let/var 에 따라
+
+<br>
+
+변수 / 상수 | 구조체 / 클래스 | `instance` | `property` 
+:---:|:---:|:---:|:---:
+***var*** | `Structure` | 값 변경 O | 값 변경 O
+***let*** | `Structure` | X | X
+***var*** | `Class` | O | O
+***let*** | `Class` | O | X
+
+   > let (상수)로 instance 생성시, 
+   > >var property: 값 변경 O
+   > >
+   > >let property: 값 변경 X
+   
+   > var (변수)로 instance 생성시, 값 변경 O
+
+<br>
+
+```swift
+struct Dog {
+    var name: String
+    let gender: String
+}
+
+// ex 1) 
+var dog = Dog(name: "Ttotto", gender: "Male")
+print(dog) 
+
+dog.name = "Tetti"
+dog.gender = "Female" // error -> gender은 let property!
+
+// ex 2)
+let dog2 = Dog(name: "Purry", gender: "Female")
+
+dog2.name = "hakyung" // error -> dog2는 let instance!
+```
+<br>
