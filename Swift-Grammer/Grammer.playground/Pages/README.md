@@ -375,3 +375,40 @@ var user = User(nickName: "hortenssiaa", age: 25)
 user.nickName = "niki" // property value 변경됨!
 user.info() // niki 25
 ```
+
+
+----
+<br>
+
+
+
+### 8. [Class](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Class%20init.xcplaygroundpage/Contents.swift)
+Structure (= value(값) type) & Class (= reference(참조) type)
+: 데이터를 용도에 맞게 표현할 때 용이 
+- property, function 사용
+- init (initialize)
+    1. 인스턴스 사용하기 위한 초기화
+       > property를 초기화한다!
+- de-init
+  : Class instance에만 de-init 가능
+  1. 
+<br>
+
+```swift
+class Dog {
+    var name: String
+    var age: Int
+    
+    init() { }
+    
+    func introduce() {
+        print("name: \(name), age: \(age)")
+    }
+}
+
+var dog = Dog()
+dog
+```
+
+
+
