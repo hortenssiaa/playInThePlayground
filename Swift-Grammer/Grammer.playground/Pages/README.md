@@ -351,7 +351,7 @@ print(stringToInt + 1)
 
 
 ### 7. [Structure](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Structure.xcplaygroundpage/Contents.swift)
-Structure (= 값 type) & Class (= reference(참조) type)
+Structure (= value(값) type) & Class (= reference(참조) type)
 : 데이터를 용도에 맞게 표현할 때 용이 
 - property, function 사용
 - 사용자정의 data type
