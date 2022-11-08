@@ -2,8 +2,8 @@
 ### Contents 🗂
 : Click & see a quick overview of Swift grammer!🤓
 
-1. [Basic Data Type](https://github.com/hortenssiaa/playInThePlayground/edit/master/Swift-Grammer/Grammer.playground/Pages/README.md#1-basic-data-type)
-2. [Collection](https://github.com/hortenssiaa/playInThePlayground/edit/master/Swift-Grammer/Grammer.playground/Pages/README.md#2-collection)
+1. [Basic Data Type](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#%EF%B8%8F-1-basic-data-type)
+2. [Collection](https://github.com/hortenssiaa/playInThePlayground/edit/master/Swift-Grammer/Grammer.playground/Pages/README.md#%EF%B8%8F-2-collection)
 3. [Function](https://github.com/hortenssiaa/playInThePlayground/edit/master/Swift-Grammer/Grammer.playground/Pages/README.md#3-function)
 4. [Conditional Statement](https://github.com/hortenssiaa/playInThePlayground/edit/master/Swift-Grammer/Grammer.playground/Pages/README.md#4-conditional-statement)
 5. [Repetitive Statement](https://github.com/hortenssiaa/playInThePlayground/edit/master/Swift-Grammer/Grammer.playground/Pages/README.md#5-repetitive-statement)
