@@ -514,7 +514,7 @@ class4.count // 100
 ***2. Structure 구조체***
 - 값타입 (value type)
     - 변수 할당시; 
-        - 스택 영역에 값 저장
+        - 스택 영역 ← 값 저장
         - ARC로 메모리 관리 X
     - 같은 structure instance 를 여러개에 할당시; 
         - 새로운 structure instance가 할당됨
