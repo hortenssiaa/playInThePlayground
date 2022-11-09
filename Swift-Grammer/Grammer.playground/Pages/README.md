@@ -568,7 +568,7 @@ struct4.count // 404
 - 변수(var), 상수(let), struct/class 멤버변수
     - Structure은, value(값) type → let / var instance에 따라 영향 O !!!
     - ↔️ Class는, reference(참조) type → 영향 X ! 
-        > but, 해당 클래스 내의 property의 let/var 에 따라
+        > but, 해당 클래스 내의 property의 let/var 에 따라 영향 O 
 
 <br>
 
