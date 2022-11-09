@@ -11,6 +11,7 @@
 - 6.1. [Optional Binding](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#61-optional-binding-code)
 7. [Structure](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#7-structure-code)
 8. [Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#8-class-code)
+- 8.1. [Comparison of Structure & Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#9-property-code)
 9. [Property](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#9-property-code)
 
 
@@ -104,7 +105,7 @@ sendMessage(from: "Hakyung", to: "Ken")
 ```
 <br>
 
-#### 3.3 **전달인자 Lable 사용하고싶지 않다면? -> wild card _ 사용**
+#### 3.3 **전달인자 Lable 사용하고싶지 않다면? → wild card _ 사용**
 ```swift
 func sendMessage(_ name: String) -> String {
     return "Hello, \(name)"
@@ -126,7 +127,7 @@ func sendMessage(me: String, friends: String...) -> String {
 }
 
 sendMessage(me: "Hakyung", friends: "Jake", "Ken", "Anne", "Tiffany")
-// Hello ["Jake", "Ken", "Anne", "Tiffany"], I✏️'m Hakyung"
+// Hello ["Jake", "Ken", "Anne", "Tiffany"], I'm Hakyung"
 ```
 <br>
 
@@ -245,9 +246,9 @@ print("x: \(x)")
 - Swift / 일반 프로그래밍 언어 차이
   - Swift
     - 안정성이 장점!
-    - optional 사용시, nil에 접근해도 -> 프로그램 종료 X
+    - optional 사용시, nil에 접근해도 → 프로그램 종료 X
   - 일반 프로그래밍 언어
-    - 값이 null에 접근시, run time error -> 프로그램 종료 O
+    - 값이 null에 접근시, run time error → 프로그램 종료 O
 
 <br>
 
@@ -279,7 +280,7 @@ var requiredName: String = optionalName // X (optional unrapped error)
 
 #### 6.1.1 **optional 강제해제**
 - ! 사용
-- 아주 위험! -> 프로그램 강제종료
+- 아주 위험! → 프로그램 강제종료
   > nil 강제 해제시 
 ```swift
 var number: Int? = 3
@@ -296,8 +297,8 @@ print(number!)
 - optional을 추출해서, 할당받을 변수(상수) 설정
   > result
 - if-else으로..
-  - optional값이 잘 추출 됐으면 -> if 문 실행
-  - optional값이 nil이면 -> else 문 실행
+  - optional값이 잘 추출 됐으면 → if 문 실행
+  - optional값이 nil이면 → else 문 실행
 - if-else 문으로 추출시;
   - 변수/상수는 if-else문 내에서만 사용 가능
   - 안전함!
@@ -409,8 +410,8 @@ Structure (= value(값) type) & Class (= reference(참조) type)
        > property를 초기화한다!
 - de-init
     - Class instance에만 de-init 가능 
-    - Swift는, instance 가 더이상 필요하지 않을때 -> 자동으로 메모리 소멸시킴!
-    - Class instance 에 nil 을 넣으면 -> 더이상 필요X instance 라고 판단
+    - Swift는, instance 가 더이상 필요하지 않을때 → 자동으로 메모리 소멸시킴!
+    - Class instance 에 nil 을 넣으면 → 더이상 필요X instance 라고 판단
         > user3 = nil
          1. instance 가 메모리에서 해제되기 직전에 호출
             > deinit { }
@@ -462,6 +463,96 @@ user3 = nil // deinit user
 
 
 
+
+### 8.1. Comparison of Structure & Class
+
+#### 8.1.1 **Structure & Class 공통점**
+- 변수(var), 상수(let) property 선언 가능
+- function (메서드) 선언 가능
+- 내부 값에 . 을 사용하여 접근 가능
+- 생성자 사용하여 초기값 설정 가능
+- extension을 사용하여 기능 확장 가능!
+- propocol 채택하여 기능 설정 가능!
+
+<br>
+
+#### 8.1.2 **Structure & Class 차이점**
+***1. Class 클래스***
+- 참조타입 (reference type)
+    - 메모리 스택 영역 ← instance 메모리 주소 할당 (= 포인터) 
+    - 힙 영역 ← 실제 데이터 할당
+      > 힙 영역에 저장되기 때문에, ARC로 메모리를 관리한다.
+    - 같은 class instance 를 여러개 할당시;
+        - 하나의 instance만 가리키는 메모리 주소가 복사되어
+        - → 값 변경시, 모든 변수에 영향!
+- 상속 가능!
+- Type casting을 통해, 
+    - run-time시 class instance의 타입 확인 가능
+- deinit 사용 가능
+    - class instance 의 메모리 할당 해제 가능
+
+```swift
+class SomeClass {
+    var count: Int = 0
+}
+
+var class1 = SomeClass()
+var class2 = class1
+var class3 = class2
+var class4 = class2
+
+class3.count = 100 
+class1.count // 100
+class2.count // 100
+class3.count // 100
+class4.count // 100
+```
+
+
+<br>
+
+***2. Structure 구조체***
+- 값타입 (value type)
+    - 변수 할당시; 
+        - 스택 영역에 값 저장
+        - ARC로 메모리 관리 X
+    - 같은 structure instance 를 여러개에 할당시; 
+        - 새로운 structure instance가 할당됨
+          > (= 새로운 메모리가 계속 할당됨)
+        - 즉, 값 변경해도 다른 구조체 변수에 영향 X
+- 상속 불가능!
+
+```swift
+struct SomeStruct {
+    var count: Int = 0
+}
+
+var struct1 = SomeStruct()
+var struct2 = struct1
+var struct3 = struct2
+var struct4 = struct1
+
+struct1.count = 101
+struct2.count = 102
+struct3.count = 103
+struct4.count = 404
+
+struct1.count // 101
+struct2.count // 102
+struct3.count // 103
+struct4.count // 404
+```
+
+
+<br>
+
+
+----
+<br>
+
+
+
+
 ### 9. Property ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Property.xcplaygroundpage/Contents.swift))
 1. 저장형 property
 2. 계산 property
@@ -475,8 +566,8 @@ user3 = nil // deinit user
 
 #### 9.1 **저장형 property**
 - 변수(var), 상수(let), struct/class 멤버변수
-    - Structure은, value(값) type -> let / var instance에 따라 영향 O !!!
-    - ↔️ Class는, reference(참조) type -> 영향 X ! 
+    - Structure은, value(값) type → let / var instance에 따라 영향 O !!!
+    - ↔️ Class는, reference(참조) type → 영향 X ! 
         > but, 해당 클래스 내의 property의 let/var 에 따라
 
 <br>
@@ -542,7 +633,7 @@ cat.gender = "male" // X (error) -> Class는 let instance여도 변경가능하�
 - class, structure, enum 에서사용 가능!
 - property에 getter / setter
     - 값 직접 저장X
-        > -> getter/setter로 property/value 직접 접근!
+        > → getter/setter로 property/value 직접 접근!
         1. set 매개변수 이름 지정시
         ```swift
             set(newPrice) {
@@ -641,7 +732,7 @@ account.credit = 20000
 #### 9.4 **type property**
 - static 으로 정의!
 - instance 생성 X 
-    - -> 객체내 property에 접근
+    - → 객체내 property에 접근
 - static 변수(var)시, 값변경 가능 !
 - 저장 property (var/let), 연산 property (setter/getter) 에서만 사용 가능
 
