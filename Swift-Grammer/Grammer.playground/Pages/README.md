@@ -18,7 +18,7 @@
 <br>
 
 
-### ✏️ 1. Basic Data Type ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Basic%20Data%20Type.xcplaygroundpage/Contents.swift))
+### 1. Basic Data Type ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Basic%20Data%20Type.xcplaygroundpage/Contents.swift))
     • Int, UInt
     • Float, Double
     • Bool
@@ -27,7 +27,7 @@
 ----
 <br>
 
-### ✏️ 2. Collection ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Collection.xcplaygroundpage/Contents.swift))
+### 2. Collection ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Collection.xcplaygroundpage/Contents.swift))
 #### 2.1 **Array**
   - 기본형
     ```swift
@@ -70,7 +70,7 @@
 
 
 
-### ✏️ 3. Function ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Function.xcplaygroundpage/Contents.swift))
+### 3. Function ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Function.xcplaygroundpage/Contents.swift))
 : Swift는 함수형 프로그래밍 패러다임을 포함한, 다중 패러다임을 포함한 언어
 - 함수는? 1급 객체
 - 함수를? 변수(var) / 상수(let) 등에 할당 가능
@@ -134,7 +134,7 @@ sendMessage(me: "Hakyung", friends: "Jake", "Ken", "Anne", "Tiffany")
 <br>
 
 
-### ✏️ 4. Conditional Statement ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Conditional%20Statement.xcplaygroundpage/Contents.swift))
+### 4. Conditional Statement ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Conditional%20Statement.xcplaygroundpage/Contents.swift))
 
 #### 4.1 **if-else**
 ```swift
@@ -196,7 +196,7 @@ default:
 <br>
 
 
-### ✏️ 5. Repetitive Statement ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Repetitive%20Statement.xcplaygroundpage/Contents.swift))
+### 5. Repetitive Statement ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Repetitive%20Statement.xcplaygroundpage/Contents.swift))
 
 #### 5.1 **for-in**
 ```swift
@@ -239,7 +239,7 @@ print("x: \(x)")
 <br>
 
 
-### ✏️ 6. Optional ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Optional.xcplaygroundpage/Contents.swift))
+### 6. Optional ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Optional.xcplaygroundpage/Contents.swift))
 : 값이 있을수도~ 없을수도(nil)~ 있다.
 - 초기값? nil
 - Swift / 일반 프로그래밍 언어 차이
@@ -266,7 +266,7 @@ var requiredName: String = optionalName // X (optional unrapped error)
 ----
 <br>
 
-### ✏️ 6.1. Optional Binding ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Optional%20Bind.xcplaygroundpage/Contents.swift))
+### 6.1. Optional Binding ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Optional%20Bind.xcplaygroundpage/Contents.swift))
 : optional 포장지 벗겨서 값 갖고오는
 1. 명시적 해제 (binding)
 - 강제 해제
@@ -368,7 +368,7 @@ print(stringToInt + 1)
 
 
 
-### ✏️ 7. Structure ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Structure.xcplaygroundpage/Contents.swift))
+### 7. Structure ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Structure.xcplaygroundpage/Contents.swift))
 Structure (= value(값) type) & Class (= reference(참조) type)
 - 데이터를 용도에 맞게 표현할 때 용이 
 - property, function 사용
@@ -400,7 +400,7 @@ user.info() // niki 25
 
 
 
-### ✏️ 8. Class ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Class%20init.xcplaygroundpage/Contents.swift))
+### 8. Class ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Class%20init.xcplaygroundpage/Contents.swift))
 Structure (= value(값) type) & Class (= reference(참조) type)
 - 데이터를 용도에 맞게 표현할 때 용이 
 - property, function 사용
@@ -462,7 +462,7 @@ user3 = nil // deinit user
 
 
 
-### ✏️ 9. Property ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Property.xcplaygroundpage/Contents.swift))
+### 9. Property ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Property.xcplaygroundpage/Contents.swift))
 1. 저장형 property
 2. 계산 property
 3. property observer
