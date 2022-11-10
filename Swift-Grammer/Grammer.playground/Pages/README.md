@@ -769,6 +769,117 @@ SomeStructure.storedTypeProperty_Let = "Change value!!!" // X
 : 상속은, Swift에서 Class와 다른타입을 구별짓는 클래스의 특징!
 1. Super class의 property 
     - → Sub class에서 재정의 가능
+2. 저장(let/var), 계산(setter/getter) property를 override 한 property
+    - → getter / setter 갖을 수 있음!
+3. Sub class에서 재정의하려는 property는!
+    - → Super class의 property의 이름 & 타입이 일치해야함!
+4. Super class에서 read/write 로 선언된 property
+    - --X--> Sub class에서 read only로 override X
+4.1 Super class에서 read only 로 선언된 property
+    - --O--> Sub class에서 read/write로 override O
+5. Sub class에서, 
+    - → Super class의 property에 property observer 추가 가능!
 - Base Class
   > 어떤 클래스도 상속받지 않은 클래스
 
+
+<br>
+
+#### 10.1 **Class & method overriding**
+```swift
+Class Vehicle {
+    var currentSpeed = 0.0
+    var description: String {
+        return "traveling at \(currentSpeed)"
+    }
+    
+    func makeNoise() {
+        print("speaker on..")
+    }
+}
+
+Class Bicycle: Vehicle {
+    var hasBasket: Bool = false
+    
+    override func makeNoise() {
+        super.makeNoise() // no.1
+        print("따르릉 따르릉~") // no.2
+    }
+}
+
+var bicycle = Bicycle()
+bicycle.currentSpeed // 0.0
+bicycle.currentSpeed = 50.0 // 값 변경 가능
+bicycle.currentSpeed // 50.0
+
+bicycle.makeNoise()
+// spaeker on..
+// 따르릉 따르릉~
+```
+
+<br>
+
+
+#### 10.2 **Property overriding**
+1. 걔산, 저장 property를 override 하면
+   > setter / getter 가질 수 있음!
+2. Sub class에서 재정의하려는 Super class의 property
+   > 타입 & 이름 일치해야함!
+3. Super class의 read/write property
+   > sub class에서 read only 로 override (X)
+4. Super class의 read only property
+   > sub class에서 read/write 로 override (O)
+
+   
+<br>
+
+```swift
+Class Vehicle {
+    var currentSpeed = 0.0
+    var description: String {
+        return "traveling at \(currentSpeed)"
+    }
+    
+    func makeNoise() {
+        print("speaker on..")
+    }
+}
+
+Class Car: Vehicle {
+    var gear = 1
+    override var description: String {
+        return super.description + " in gear \(gear)"
+    }
+}
+```
+
+<br>
+
+
+#### 10.2 **상속한 property에 
+- Super class의 property 오버라이드시!
+   > property observer 추가 가능!
+   
+<br>
+
+```swift
+Class Vehicle {
+    var currentSpeed = 0.0
+    var description: String {
+        return "traveling at \(currentSpeed)"
+    }
+    
+    func makeNoise() {
+        print("speaker on..")
+    }
+}
+
+Class Car: Vehicle {
+    var gear = 1
+    override var description: String {
+        return super.description + " in gear \(gear)"
+    }
+}
+```
+
+<br>
