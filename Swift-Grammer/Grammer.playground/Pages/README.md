@@ -13,7 +13,7 @@
 8. [Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#8-class-code)
 - 8.1. [Comparison of Structure & Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages/#81-comparison-of-structure--class)
 9. [Property](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#9-property-code)
-
+10. [Class Inheritance](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#10-class-inheritance-code)
 
 ----
 <br>
@@ -765,7 +765,7 @@ SomeStructure.storedTypeProperty_Let = "Change value!!!" // X
 
 
 
-### 10. Inheritance ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Inheritance.xcplaygroundpage/Contents.swift))
+### 10. Class Inheritance ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Inheritance.xcplaygroundpage/Contents.swift))
 : 상속은, Swift에서 Class와 다른타입을 구별짓는 클래스의 특징!
 - Super class의 property 
     - → Sub class에서 재정의 가능
