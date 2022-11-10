@@ -769,16 +769,6 @@ SomeStructure.storedTypeProperty_Let = "Change value!!!" // X
 : 상속은, Swift에서 Class와 다른타입을 구별짓는 클래스의 특징!
 - Super class의 property 
     - → Sub class에서 재정의 가능
-- 저장(let/var), 계산(setter/getter) property를 override 한 property
-    - → getter / setter 갖을 수 있음!
-- Sub class에서 재정의하려는 property는!
-    - → Super class의 property의 이름 & 타입이 일치해야함!
-- Super class에서 read/write 로 선언된 property
-    - → Sub class에서 read only로 override X
-- Super class에서 read only 로 선언된 property
-    - → Sub class에서 read/write로 override O
-- Sub class에서, 
-    - → Super class의 property에 property observer 추가 가능!
 - Base Class
   > 어떤 클래스도 상속받지 않은 클래스
 
