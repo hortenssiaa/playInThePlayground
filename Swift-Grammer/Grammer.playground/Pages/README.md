@@ -763,3 +763,12 @@ SomeStructure.storedTypeProperty_Let = "Change value!!!" // X
 <br>
 
 
+
+
+### 10. Inheritance ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Inheritance.xcplaygroundpage/Contents.swift))
+: 상속은, Swift에서 Class와 다른타입을 구별짓는 클래스의 특징!
+1. Super class의 property 
+    - → Sub class에서 재정의 가능
+- Base Class
+  > 어떤 클래스도 상속받지 않은 클래스
+
