@@ -767,17 +767,17 @@ SomeStructure.storedTypeProperty_Let = "Change value!!!" // X
 
 ### 10. Inheritance ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Inheritance.xcplaygroundpage/Contents.swift))
 : 상속은, Swift에서 Class와 다른타입을 구별짓는 클래스의 특징!
-1. Super class의 property 
+- Super class의 property 
     - → Sub class에서 재정의 가능
-2. 저장(let/var), 계산(setter/getter) property를 override 한 property
+- 저장(let/var), 계산(setter/getter) property를 override 한 property
     - → getter / setter 갖을 수 있음!
-3. Sub class에서 재정의하려는 property는!
+- Sub class에서 재정의하려는 property는!
     - → Super class의 property의 이름 & 타입이 일치해야함!
-4. Super class에서 read/write 로 선언된 property
-    - --X--> Sub class에서 read only로 override X
-4.1 Super class에서 read only 로 선언된 property
-    - --O--> Sub class에서 read/write로 override O
-5. Sub class에서, 
+- Super class에서 read/write 로 선언된 property
+    - → Sub class에서 read only로 override X
+- Super class에서 read only 로 선언된 property
+    - → Sub class에서 read/write로 override O
+- Sub class에서, 
     - → Super class의 property에 property observer 추가 가능!
 - Base Class
   > 어떤 클래스도 상속받지 않은 클래스
@@ -851,12 +851,17 @@ Class Car: Vehicle {
         return super.description + " in gear \(gear)"
     }
 }
+
+let car = Car()
+car.currentSpeed = 30.0
+car.gear = 2
+print(car.description) // traveling at 30.0 in gear 2
 ```
 
 <br>
 
 
-#### 10.2 **상속한 property에 
+#### 10.2 **상속한 property에 property observer 추가!**
 - Super class의 property 오버라이드시!
    > property observer 추가 가능!
    
@@ -880,6 +885,26 @@ Class Car: Vehicle {
         return super.description + " in gear \(gear)"
     }
 }
+
+class AutomaticCar: Car {
+    override var currentSpeed: Double {
+        didSet {
+            gear = Int(currentSpeed / 10) + 1
+        }
+    }
+}
+
+let auto = AutomaticCar()
+auto.currentSpeed = 39.4 // gear == 4
+print("AutomaticCar: \(auto.description)")
+// AutomaticCar: traveling at 39.4 in gear 4
 ```
 
 <br>
+
+
+----
+<br>
+
+
+
