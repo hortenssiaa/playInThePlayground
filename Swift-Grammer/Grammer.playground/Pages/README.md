@@ -898,3 +898,4 @@ print("AutomaticCar: \(auto.description)")
 
 
 
+### 11. Enum ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Inheritance.xcplaygroundpage/Contents.swift))
