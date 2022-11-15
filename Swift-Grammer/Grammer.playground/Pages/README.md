@@ -15,7 +15,8 @@
 9. [Property](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#9-property-code)
 10. [Class inheritance](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#10-class-inheritance-code)
 11. [Assert & guard](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#11-assert--guard-code)
-12. [Enum](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#12-enum-code)
+12. [Protocol](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#11-assert--guard-code)
+13. [Enum](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#12-enum-code)
 
 ----
 <br>
@@ -917,4 +918,29 @@ print("AutomaticCar: \(auto.description)")
 
 
 
-### 12. Enum ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Enum.xcplaygroundpage/Contents.swift))
+
+### 12. Protocol ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Protocol.xcplaygroundpage/Contents.swift))
+
+
+
+
+
+
+
+<br>
+
+
+----
+<br>
+
+
+
+### 13. Enum ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Enum.xcplaygroundpage/Contents.swift))
+
+
+
+<br>
+
+
+----
+<br>
