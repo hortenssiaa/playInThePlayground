@@ -7,6 +7,8 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 - Conditional statement, Repetitive statement
 - Structure, Class (+inheritance), Type casting
 - Optional (+binding), Enum
+- Assert, Guard
+- Protocol
 <br>
 
 #### - Used Class: UICollectionViewDataSource, UICollectionViewFlowLayout
