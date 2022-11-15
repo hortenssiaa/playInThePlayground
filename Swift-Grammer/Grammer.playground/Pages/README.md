@@ -15,8 +15,8 @@
 9. [Property](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#9-property-code)
 10. [Class inheritance](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#10-class-inheritance-code)
 11. [Assert & guard](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#11-assert--guard-code)
-12. [Protocol](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#11-assert--guard-code)
-13. [Enum](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#12-enum-code)
+12. [Protocol](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#12-protocol-code)
+13. [Enum](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#13-enum-code)
 
 ----
 <br>
