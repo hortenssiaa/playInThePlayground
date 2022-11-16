@@ -8,7 +8,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 - Structure, Class (+inheritance), Type casting
 - Optional (+binding), Enum
 - Assert, Guard
-- Protocol
+- Protocol, Extension
 <br>
 
 #### - Used Class: UICollectionViewDataSource, UICollectionViewFlowLayout
