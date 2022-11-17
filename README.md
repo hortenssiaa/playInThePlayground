@@ -6,7 +6,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 - Data type, Collection, Function
 - Conditional statement, Repetitive statement
 - Structure, Class (+inheritance), Type casting
-- Optional (+binding), Enum
+- Optional (+binding, +chaining), Enum
 - Assert, Guard
 - Protocol, Extension
 <br>
