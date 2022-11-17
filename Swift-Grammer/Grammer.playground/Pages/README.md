@@ -9,6 +9,7 @@
 5. [Repetitive Statement](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#5-repetitive-statement-code)
 6. [Optional](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages/#6-optional-code)
 - 6.1. [Optional Binding](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#61-optional-binding-code)
+- 6.2. [Optional Chaining](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#62-optional-chaining-code)
 7. [Structure](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#7-structure-code)
 8. [Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#8-class-code)
 - 8.1. [Comparison of Structure & Class](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages/#81-comparison-of-structure--class)
@@ -370,6 +371,19 @@ print(stringToInt + 1)
 
 ----
 <br>
+
+
+### 6.2. Optional Chaining ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Optional%20Chaining.xcplaygroundpage/Contents.swift))
+
+
+
+
+<br>
+
+
+----
+<br>
+
 
 
 
