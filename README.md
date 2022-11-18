@@ -9,6 +9,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 - Optional (+binding, +chaining), Enum
 - Assert, Guard
 - Protocol, Extension
+- try-catch
 <br>
 
 #### - Used Class: UICollectionViewDataSource, UICollectionViewFlowLayout
