@@ -20,6 +20,7 @@
 13. [Extension](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#13-extension-code)
 14. [Enum](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#14-enum-code)
 15. [try-catch](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#15-try-catch-code)
+16. [Closure](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#16-closure-code)
 
 ----
 <br>
@@ -979,6 +980,22 @@ print("AutomaticCar: \(auto.description)")
 
 
 ### 15. try-catch ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/try-catch.xcplaygroundpage/Contents.swift))
+
+
+
+<br>
+
+
+----
+<br>
+
+
+
+
+
+
+
+### 16. Closure ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Closure.xcplaygroundpage/Contents.swift))
 
 
 
