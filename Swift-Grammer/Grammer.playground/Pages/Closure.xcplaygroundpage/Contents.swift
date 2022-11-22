@@ -78,3 +78,11 @@ doSomething2()()
  - 맨 마지막 매개변수로 전달되는 클로저에만 해당!
  - 매개변수로 클로저 여러개 전달시; 맨 마지막 클로저만 후행 클로저 사용 가능
  */
+dosomething() { // 파라미터&반환값 없는 클로저이므로 >>> () -> () in 모두 생략 가능
+    print("dosomething 후행클로저 실행")
+}
+
+// + dosomething과 같이, 단 하나의 클로저만 매개변수 전달시, 소괄호도 생략 가능!
+dosomething {
+    print("dosomething 소괄호도 생략")
+}
