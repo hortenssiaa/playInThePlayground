@@ -21,7 +21,7 @@
       - 백그라운드에서도 앱 다운 가능 
       <br>
 
-2. **URLSession** *(주요 주체)*
+2. **URLSession** *(✭ 주요 주체)*
   - URLSession의 생성을 위해, URLSessionConfiguration 먼저 필요 
 <br>
 
