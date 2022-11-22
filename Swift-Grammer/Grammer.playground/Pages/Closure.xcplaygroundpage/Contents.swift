@@ -6,9 +6,9 @@ import Foundation
  - 코드에서 전달 및 사용할 수 있는 독립기능의 블록
  - 일급 객체 역할
     ** 일급 객체란?
-    1. 전달인자로 보낼 수 있고
-    2. 변수/상수 등으로 저장하거나 전달 가능
-    3. 함수의 반한값이 될수도 있다
+    1. 변수/상수 등으로 저장하거나 전달 가능
+    2. 전달인자로 보낼 수 있고
+    3. 함수의 반한값이 될수도 있다 (return 클로저)
  - 보통 Closure 라고 하면?
     >> Unnamed Closure (익명함수) 지칭
     >> 다만, Named closure도 존재한다는 것
@@ -44,3 +44,37 @@ let hello2 = { (name: String) -> String in
 
 //hello2(name: "Hakyung")
 hello2("Hakyng")
+
+
+// 2. 함수의 파라미터 타입으로 클로저 전달하기
+// 2-1. 파라미터와 리턴타입이 없는 클로저
+func dosomething(closure: () -> ()) {
+    closure() // doSomething 함수 호출시, closure가 실행되게
+}
+
+// 함수 호출
+dosomething(closure: { () -> () in
+    print("Hello doSomething")
+})
+
+
+// 3. 함수의 반한값이 될수도 있다 (return 클로저)
+// 3-1. 파라미터와 리턴타입이 없는 클로저를 (리턴타입으로) 반환하는 함수
+func doSomething2() -> () -> () {
+    return { () -> () in // 반환 타입이, 파라미터와 리턴타입이 없는 클로저이므로
+        print("Hello doSomething4")
+    }
+}
+
+// 함수 호출
+doSomething2()()
+
+
+
+// 4. 읽기 쉬운 클로저로 바꾸기 == 후행 클로저 기능
+// 클로저가 길어지거나, 가독성 떨어질때
+/*
+ 후행 클로저?
+ - 맨 마지막 매개변수로 전달되는 클로저에만 해당!
+ - 매개변수로 클로저 여러개 전달시; 맨 마지막 클로저만 후행 클로저 사용 가능
+ */
