@@ -150,3 +150,14 @@ doSomethingMakeItShort() {
 doSomethingMakeItShort {
     $0 + $1 + $2
 }
+
+
+
+/*
+ **** 클로저 간결화
+ >> 가독성 높아짐!
+ 
+ * Class instance로 클로저 할당시;
+  - 클로저와, 인스턴스 사이에 강한 순환참조가 생겨,
+  - 메모리 leak 발생 가능
+ */
