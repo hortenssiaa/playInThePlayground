@@ -86,3 +86,67 @@ dosomething() { // 파라미터&반환값 없는 클로저이므로 >>> () -> ()
 dosomething {
     print("dosomething 소괄호도 생략")
 }
+
+
+
+// ** 다중 후행 클로저 : 매개변수에 다중 클로저가 있는 경우
+func doSomethingMultiClosure(success: () -> (), fail: () -> ()) {
+    
+}
+
+doSomethingMultiClosure { // 첫번째 클로저: success 매개변수 레이블 생략!
+    <#code#>
+} fail: {
+    <#code#>
+}
+
+
+
+// 클로저 표현 간소화하기!
+// >> 문법 최적화하여, 간소화하기
+
+// 간소화 X version
+func doSomethingMakeItShort(closure: (Int, Int, Int) -> Int) {
+    closure(1,2,3)
+    // 매개변수로 받은 closure을 실행하는데,
+    // 이때, 매개변수로 1,2,3을 넘겨주고 있다
+}
+
+// doSomethingMakeItShort 클로저 호출 - 경량 문법
+doSomethingMakeItShort(closure: { (a, b, c) in    // 1. 파라미터 데이터 타입 생략
+    return a + b + c   // 2. Type 유추를 통해, return 타입 생략 가능
+})
+
+// doSomethingMakeItShort 클로저 호출 - 약식
+// 파라미터, 리턴 형식 생략
+doSomethingMakeItShort(closure: {
+    return $0 + $1 + $2 // 매개변수 이름 생략 -> 매개변수를 약식 인수 이름으로 대체! >> 매개변수 & in 키워드 삭제 가능
+})
+
+// doSomethingMakeItShort 클로저 호출 - 약식 2
+// return 생략
+// >> 단, 단일 return문일때!
+doSomethingMakeItShort(closure: {
+    $0 + $1 + $2
+})
+
+// X
+// 단일 return문 아님
+doSomethingMakeItShort(closure: {
+    print("test")
+    $0 + $1 + $2
+})
+
+
+// doSomethingMakeItShort 클로저 호출 - 후행 클로저로 작성 가능
+doSomethingMakeItShort() {
+    $0 + $1 + $2
+}
+
+
+// doSomethingMakeItShort 클로저 호출 - 후행 클로저로 작성 가능
+// 단 하나의 클로저!만 매개변수 전달시,
+// >> 소괄호, return, 매개변수 이름 & 매개변수 타입, in 키워드 생략 가능!
+doSomethingMakeItShort {
+    $0 + $1 + $2
+}
