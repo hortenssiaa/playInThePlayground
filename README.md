@@ -10,6 +10,7 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 - Assert, Guard
 - Protocol, Extension
 - try-catch, Closure
+- Map, Filter, Reduce
 <br>
 
 #### - Used Class: UICollectionViewDataSource, UICollectionViewFlowLayout
