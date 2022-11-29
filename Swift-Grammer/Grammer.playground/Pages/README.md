@@ -21,7 +21,7 @@
 14. [Enum](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#14-enum-code)
 15. [try-catch](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#15-try-catch-code)
 16. [Closure](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#16-closure-code)
-17. [Map, Filter, Reduce](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#16-closure-code)
+17. [Map, Filter, Reduce](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#17-map-filter-reduce-code)
 
 ----
 <br>
