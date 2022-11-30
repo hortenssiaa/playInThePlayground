@@ -923,9 +923,36 @@ print("AutomaticCar: \(auto.description)")
 ### 11. Assert & guard ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Assert%20%26%20guard.xcplaygroundpage/Contents.swift))
 
 
+#### 11.1 **assert**
+- assert 함수는, 디버깅 모드에서만 동작
+  > 주로, 디버깅중 조건의 검증을 위해 사용!
+- 특정 조건을 체크하고, 조건이 성립되지 않으면 -> 메세지를 출력하게 할 수 있는 함수
+
+   
+<br>
+
+```swift
+var value = 0
+assert(value == 0)
+
+value = 2
+assert(value == 0, "값이 0이 아닙니다")
+// 조건 불만족시, error 발생 + 메세지 출력 (= runtime error)
+// __lldb_expr_37/Assert & guard.xcplaygroundpage:26: Assertion failed: 값이 0이 아닙니다
+```
+
+<br>
 
 
+#### 11.2 **guard**
+- 함수 내에서 
 
+
+<br>
+
+```swift
+
+```
 
 
 <br>
