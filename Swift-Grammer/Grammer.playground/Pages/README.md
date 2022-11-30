@@ -945,13 +945,50 @@ assert(value == 0, "값이 0이 아닙니다")
 
 
 #### 11.2 **guard**
-- 함수 내에서 
+- 함수 내에서 사용
+- 조건을 검사하여, 그 다음 코드를 실행할지 말지 결정한다
+- guard 문에 주어진 실행코드는, 조건이 거짓일때 실행!
 
 
 <br>
 
 ```swift
+func guardTest(value: Int) {
+    guard value == 0 else {
+        print("value is not 0, but (\value)")
+        return
+    }
+    print("Value is \(value)")
+}
 
+guardTest(value: 2) // value is not 0, but 2
+guardTest(value: 0) // value is 0
+```
+
+
+<br>
+
+#### 11.2.2 **guard문으로, optional 포장지 벗기기**
+- (= optional binding)
+- optional binding 값은, 조건문(guard문) 밖에서도 사용 가능!
+
+
+<br>
+
+```swift
+func guardOpBindTest(value: Int?) {
+    guard let value = value else {
+        // 매개변수 value가 optional이니깐, 값이 있으면 상수 value에 넣고, 
+        // nil이면 error니깐 아래 코드 실행
+        print("guardOpBindTest: value is \(value)")
+        return
+    }
+    print("guardOpBindTest: Value is \(value)") // guard문을 통한 optional binding 값
+}
+
+guardOpBindTest(value: 0) // guardOpBindTest: Value is 0
+guardOpBindTest(value: nil) // guardOpBindTest: value is nil
+guardOpBindTest(value: 2) // guardOpBindTest: Value is 2
 ```
 
 
