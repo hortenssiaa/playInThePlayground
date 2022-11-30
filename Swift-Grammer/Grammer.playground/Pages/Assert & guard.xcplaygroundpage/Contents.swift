@@ -23,7 +23,7 @@ var value = 0
 assert(value == 0, "value is 0? >>> value is \(value)")
 
 value = 2
-// assert(value == 0, "value is 0? >>> value is \(value)") // runtime error
+assert(value == 0, "value is 0? >>> value is \(value)") // runtime error
 
 
 
