@@ -1010,6 +1010,9 @@ guardOpBindTest(value: 2) // guardOpBindTest: Value is 2
 
 <br>
 
+
+#### 12.1 **Structure**
+
 ```swift
 protocol SomeProtocol {
     // property : property 이름, type만 지정!
@@ -1034,9 +1037,71 @@ struct SomeStructure: SomeProtocol, SomeProtocol2 {
 ```
 
 
+<br>
+
+
+
+
+#### 12.2 **Class**
+- class에서, protocol & 부모 클래스 상속시; 
+  > 상속받을 Class를 제일 먼저 작성 -> 그리고, protocol 순서
+- class에서, protocol init 요구사항 실현시! 
+  > required init() { } 
+  >> struct (구조체) 에서는, required 필요 X 
+- final Class인 경우, 상속받지 못하므로!
+  > required 필요 X
 
 <br>
 
+```swift
+protocol FullyNames {
+    var fullName: String { get set }
+    
+    // 1. method 요구사항
+    /*
+        - instance method, type method 모두 가능
+        - 매개변수는 지정 불가!
+    */
+    func printFullName()
+    
+    // 2. init 요구사항
+    /*
+        - init 종류
+        - (1). init()
+        - (2). init(매개변수)
+    */
+    init(fullName: String)
+}
+
+protocol InitTestProtocol {
+    init()
+}
+```
+
+
+<br>
+
+```swift
+class initTestClass: InitTestProtocol {
+    required inti() {
+    
+    }
+}
+
+class Person: FullyNames {
+    var fullName: String
+    
+    func printFullName() {
+        print(fullName)
+    }
+    
+    required init(fullName: String) {
+        self.fullName = fullName
+    }
+}
+```
+
+<br>
 
 ----
 <br>
