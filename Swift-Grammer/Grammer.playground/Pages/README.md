@@ -1002,10 +1002,36 @@ guardOpBindTest(value: 2) // guardOpBindTest: Value is 2
 
 
 ### 12. Protocol ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Protocol.xcplaygroundpage/Contents.swift))
+: 특정 역할을 하기 위한 요구사항의 청사진 (계획/구상)
+- Structure, Class, Enum 에서 protocol 채택 가능
+  > protocol의 요구사항을 실제 구현시;
+  > > protocol의 요구사항을 모두 충족하면, 채택한 protocol을 준수한 것이다.
+- 특정 역할을 위한 요구사항 : method, property, init 등
+
+<br>
+
+```swift
+protocol SomeProtocol {
+    // property : property 이름, type만 지정!
+    var name: String { get set } // 읽기 & 쓰기전용
+    var age: Int { get } // 읽기전용
+    
+    // >> SomeProtocol protocol을 채택한 타입에게, name property는 읽기&쓰기로 실제구현을 준수해라!
+    // >> age property는 읽기전용 실제구현을 준수해라!
+}
 
 
+protocol SomeProtocol2 {
+}
+```
 
-
+```swift
+// 여러개의 protocol 채택 가능
+struct SomeStructure: SomeProtocol, SomeProtocol2 {
+    var name: String
+    var age: Int
+}
+```
 
 
 
