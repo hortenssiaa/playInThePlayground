@@ -1109,8 +1109,29 @@ class Person: FullyNames {
 
 
 ### 13. Extension ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Extension.xcplaygroundpage/Contents.swift))
+: 기존에 정의되어있는 Class, struture, enum, protocol에 새로운 기능을 추가할 수 있는 기능
 
 
+#### 13.1 **추가 가능한 기능**
+- 연산 타입 property
+  > 예) 짝수/홀수 계산 property
+- 연산 instant property
+- 타입 method / instant method
+- init (initialize)
+- subscript
+- 중첩 타입
+- 특정 protocol을 준수할 수 있도록 기능 추가 가능!
+
+<br>
+
+#### *💡Extension으로 새로운 기능을 추가할 수 있지만,*
+   > 기존에 존재하는 기능을 override 할 수는 없음!
+
+<br>
+
+```swift
+
+```
 
 <br>
 
