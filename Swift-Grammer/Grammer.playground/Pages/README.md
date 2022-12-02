@@ -1110,6 +1110,12 @@ class Person: FullyNames {
 
 ### 13. Extension ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Extension.xcplaygroundpage/Contents.swift))
 : 기존에 정의되어있는 Class, struture, enum, protocol에 새로운 기능을 추가할 수 있는 기능
+```swift
+/* 작성예시 */
+extension 타입이름 {
+    // 추가기능
+}
+```
 
 
 #### 13.1 **추가 가능한 기능**
