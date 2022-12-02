@@ -1130,7 +1130,7 @@ extension 타입이름 {
 
 <br>
 
-💡Extension으로 새로운 기능을 추가할 수 있지만, **기존에 존재하는 기능을 override 할 수는 없음!**
+💡Extension으로 새로운 기능을 추가할 수 있지만, ***기존에 존재하는 기능을 override 할 수는 없음!***
 
 <br>
 
