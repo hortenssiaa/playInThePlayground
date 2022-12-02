@@ -1124,13 +1124,40 @@ class Person: FullyNames {
 
 <br>
 
-#### *💡Extension으로 새로운 기능을 추가할 수 있지만,*
-   > 기존에 존재하는 기능을 override 할 수는 없음!
+💡Extension으로 새로운 기능을 추가할 수 있지만, **기존에 존재하는 기능을 override 할 수는 없음!**
 
 <br>
 
 ```swift
+extension Int {
+    var isEven: Boole {
+        return self % 2 == 0
+    }
+    
+    var isOdd: Bool {
+        return self % 2 == 1
+    }
+}
 
+let number = 3
+number.isOdd // true
+number.isEven // false
+```
+
+<br>
+
+```swift
+extension String {
+    func convertToInt() -> Int? {
+        return Int(self)
+    }
+}
+
+let str1 = "100"
+let str2 = "13s"
+
+str1.convertToInt() // 100
+str2.convertToInt() // nil
 ```
 
 <br>
