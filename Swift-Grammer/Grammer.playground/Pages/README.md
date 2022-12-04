@@ -1185,9 +1185,10 @@ str2.convertToInt() // nil
 
 <br>
 
-#### 예1) 요일을 enum으로 만들기
+#### 14.1 예1) 요일, 미디어타입을 enum으로 만들기
 
 ```swift
+// 1. 요일
 enum WeekDay {
     case mon
     case tue
@@ -1197,8 +1198,52 @@ enum WeekDay {
 }
 
 let today: WeekDay = .mon // WeekDay.mon 이라는 뜻
+
+
+// 2. 미디어타입
+enum MediaType {
+    case audio
+    case video
+}
+
+let mediaType: MediaType = .audio
 ```
 
+
+
+<br>
+
+#### 14.2.1 예2) enum + associated value(연관값)
+- associated value를 갖고있는 형태로 표현 가능!
+
+```swift
+enum MediaType2 {
+    case audio(String)
+    case video(String)
+}
+
+// audio, video 라는 큰 틀은 있고, 
+// 이 안에도 많은 확장자가 있으니, 받을때 같이 받으면 좋은 예시
+var mp3: MediaType2 = .audio("mp3")
+var h264: MediaType2 = .video("h264")
+
+print("\(mp3), \(h264)") // audio("mp3"), video("h264")
+```
+
+
+
+<br>
+
+#### 14.2.2 연관값 추측 : if / switch문 활용 *****
+
+```swift
+enum PhoneError {
+    case unknown
+    case batteryLow(String)
+}
+
+let error: PhoneError = .batteryLow("배터리가 곧 방전됩니다.")
+```
 
 
 <br>
