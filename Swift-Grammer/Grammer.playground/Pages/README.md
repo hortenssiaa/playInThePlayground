@@ -1234,7 +1234,7 @@ print("\(mp3), \(h264)") // audio("mp3"), video("h264")
 
 <br>
 
-#### 14.2.2 ⭐️ 연관값 추측 : if / switch문 활용 
+#### 14.2.2 ⭐️ 연관값 추측 : if / switch문 활용 ⭐️
 
 ```swift
 enum PhoneError {
@@ -1256,7 +1256,7 @@ switch error {
 
 <br>
 
-#### 14.3 예3) 나침판
+#### 14.3 예3) 나침판 - ***rawValue 사용***
 - 하나의 새로운 타입으로 사용 가능
 - 열거형의 각 항목(case)는, 자체로 한 값이지만, 항목이 원시값(초기값)을 특정타입으로 갖게 할 수도 있다!
   > 예) CompassPoint: String, case north = "북"
@@ -1269,6 +1269,28 @@ enum CompassPoint: String { // case의 타입을 String으로 정해줌!
     case west = "서"
     // same with -> case north, south, east, west
 }
+
+var direction = CompassPoint.east // east
+direction = .north // north
+
+// ⭐️원시값을 사용하고 싶다면?⭐️
+print(direction.rawValue) // "북"
+
+switch direction {
+    case .north:
+        print(direction.rawValue) // "북"
+    case .south:
+        print(direction.rawValue)
+    case .east:
+        print(direction.rawValue)
+    case .west:
+        print(direction.rawValue)
+}
+
+// 원시값으로 열거형 항목값 변경도 가능!
+// But, 해당 원시값이 없으면, nil
+let direc = CompassPoint(rawValue: "서") // west
+let direc2 = CompassPoint(rawValue: "북북") // nil
 ```
 
 
