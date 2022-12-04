@@ -1176,6 +1176,28 @@ str2.convertToInt() // nil
 
 
 ### 14. Enum ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Enum.xcplaygroundpage/Contents.swift))
+: 서로 관계있는 것들을 -> 모아서 -> 표현한 것
+- 특정 타입을 표시할 때 좋음
+- 하나의 새로운 타입으로 사용 가능
+- String으로 적어도 되지만, 에러를 방지하기 위해 미리 만들어줌
+  > 예) today = "mon" (o), "mom" (x) -> 시간이 지난 후 오타 발견때까지 알기 어려움
+
+
+<br>
+
+#### 예1) 요일을 enum으로 만들기
+
+```swift
+enum WeekDay {
+    case mon
+    case tue
+    case wed
+    case thu
+    case fri
+}
+
+let today: WeekDay = .mon // WeekDay.mon 이라는 뜻
+```
 
 
 
