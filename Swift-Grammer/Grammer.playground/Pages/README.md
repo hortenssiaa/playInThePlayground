@@ -1234,7 +1234,7 @@ print("\(mp3), \(h264)") // audio("mp3"), video("h264")
 
 <br>
 
-#### 14.2.2 연관값 추측 : if / switch문 활용 *****
+#### 14.2.2 ⭐️ 연관값 추측 : if / switch문 활용 
 
 ```swift
 enum PhoneError {
@@ -1243,6 +1243,32 @@ enum PhoneError {
 }
 
 let error: PhoneError = .batteryLow("배터리가 곧 방전됩니다.")
+
+// 연관값 추측
+switch error {
+    case .batteryLow(let message): // 연관값을 넘겨받도록 상수 message 선언
+        print(message) // 배터리가 곧 방전됩니다.
+    case .unkown:
+        print("알 수 없는 에러입니다.")
+}
+```
+
+
+<br>
+
+#### 14.3 예3) 나침판
+- 하나의 새로운 타입으로 사용 가능
+- 열거형의 각 항목(case)는, 자체로 한 값이지만, 항목이 원시값(초기값)을 특정타입으로 갖게 할 수도 있다!
+  > 예) CompassPoint: String, case north = "북"
+
+```swift
+enum CompassPoint: String { // case의 타입을 String으로 정해줌!
+    case north = "북"
+    case south = "남"
+    case east = "동"
+    case west = "서"
+    // same with -> case north, south, east, west
+}
 ```
 
 
