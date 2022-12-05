@@ -380,7 +380,7 @@ print(stringToInt + 1)
 : optional에 속해있는 nil일지도 모르는 property, method, subscription 등을 가져오거나 / 호출할때 사용할 수 있는 일련의 과정
 ```
 💡 정리
-Optional binding 없이, optional chaining 사용시, 값에 쉽게 접근 가능!
+  >> Optional binding 없이, optional chaining 사용시, 값에 쉽게 접근 가능!
 ```
 
 - ! 또는 ? 로 property / method 등을 접근
