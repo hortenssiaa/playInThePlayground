@@ -410,16 +410,16 @@ print(company.developer!.name)
     - 이전방식으로 optional binding하여 값 접근 가능하지만, 
        >> optional chaining을 사용하여 값 접근 가능!
        
-    - ? 을 사용하여 optional Chainging 시;
-       >> 접근한 property의 값은 항상 optional에 감싸져 있음 
-          (값이 nil 일수도 있어서)
-          -> 따라서, optional 벗겨내고싶으면, optional binding 사용하면 됨!
-          
-    - ! 을 사용하여 optional Chaining 시;
-      >> optional property 를 강제 unmapping 하여 접근 -> optional 에 감싸있지 X
+    
 ** */
 
 ```
+- ? 을 사용하여 optional Chainging 시;
+  > 접근한 property의 값은 항상 optional에 감싸져 있음 (값이 nil 일수도 있어서)
+     >>    -> 따라서, optional 벗겨내고싶으면, optional binding 사용하면 됨!
+          
+- ! 을 사용하여 optional Chaining 시;
+  > optional property 를 강제 unmapping 하여 접근 -> optional 에 감싸있지 X
 
 <br>
 
