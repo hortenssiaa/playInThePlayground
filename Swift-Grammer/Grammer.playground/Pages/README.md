@@ -386,6 +386,8 @@ print(stringToInt + 1)
 - ! 또는 ? 로 property / method 등을 접근
 - property / method 등에 값이 있다면, 해당값을 반환
   > 값이 없다면, nil 을 반환!
+  
+<br>
 
 ```swift
 struct Developer { 
