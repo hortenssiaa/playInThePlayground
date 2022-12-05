@@ -377,9 +377,47 @@ print(stringToInt + 1)
 
 
 ### 6.2. Optional Chaining ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Optional%20Chaining.xcplaygroundpage/Contents.swift))
+: optional에 속해있는 nil일지도 모르는 property, method, subscription 등을 가져오거나 / 호출할때 사용할 수 있는 일련의 과정
+```
+💡 정리
+Optional binding 없이, optional chaining 사용시, 값에 쉽게 접근 가능!
+```
 
+- ! 또는 ? 로 property / method 등을 접근
+- property / method 등에 값이 있다면, 해당값을 반환
+  > 값이 없다면, nil 을 반환!
 
+```swift
+struct Developer { 
+    let name: String
+}
 
+struct Company {
+    let name: String
+    var developer: Developer?
+}
+
+var developer = Developer(name: "Miel")
+var company = Company(name: "Apple", developer: developer)
+print(company.developer) // Optional(__lldb_xxxxx.Developer(name: "Miel"))
+
+print(company.developer?.name) // company.developer은, optional type이기 때문에
+                                // optional을 벗겨내고 name에 접근해!
+print(company.developer!.name)
+/* **
+    - 이전방식으로 optional binding하여 값 접근 가능하지만, 
+       >> optional chaining을 사용하여 값 접근 가능!
+       
+    - ? 을 사용하여 optional Chainging 시;
+       >> 접근한 property의 값은 항상 optional에 감싸져 있음 
+          (값이 nil 일수도 있어서)
+          -> 따라서, optional 벗겨내고싶으면, optional binding 사용하면 됨!
+          
+    - ! 을 사용하여 optional Chaining 시;
+      >> optional property 를 강제 unmapping 하여 접근 -> optional 에 감싸있지 X
+** */
+
+```
 
 <br>
 
