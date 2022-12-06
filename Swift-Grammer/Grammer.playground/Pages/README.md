@@ -1373,7 +1373,7 @@ enum PhoneError: Error {
 <br>
 
 
-#### 15.2.1 (throw) 오류 던지기
+#### 15.2.1 *(throw)* 오류 던지기
 ```swift
 throw PhoneError.batteryLow(batteryLevel: 20)
 //Playground execution terminated: An error was thrown and was not caught:
@@ -1384,7 +1384,7 @@ throw PhoneError.batteryLow(batteryLevel: 20)
 
 <br>
 
-#### 15.2.2 (throw) 함수에서 발생한 오류를 -> 해당함수를 호출한 코드에 전파 
+#### 15.2.2 *(throw)* 함수에서 발생한 오류를 -> 해당함수를 호출한 코드에 전파 
 ```swift
 func checkPhoneBateryStatus(batteryLevel: Int) throws -> String {
     guard batteryLevel != -1 else { throw PhoneError.unknown }
@@ -1397,7 +1397,7 @@ func checkPhoneBateryStatus(batteryLevel: Int) throws -> String {
 
 <br>
 
-#### 15.3 (do(try)-catch) throw method 사용하기
+#### 15.3 *(do(try)-catch)* throw method 사용하기
 : throw method는 에러를 반환할 수 있으니 
   > do-catch / try? / try! 로 오류 처리하기!
 - catch 블록 내의 지역상수 error
@@ -1420,7 +1420,7 @@ do {
 <br>
 
 
-#### 15.4 (try?) optional 값으로 오류 처리하기!
+#### 15.4 *(try?)* optional 값으로 오류 처리하기!
 - 오류를 optional 값으로 반환하여, 처리하기!
 - 오류일 경우에는; 값은 nil 반환 
 
@@ -1438,7 +1438,7 @@ print(status)
 <br>
 
 
-#### 15.5 (try!) 오류가 발생하지 않을것이라고 확신하기!
+#### 15.5 *(try!)* 오류가 발생하지 않을것이라고 확신하기!
 - 오류가 절대로 일어나지 않을것이라고 확신할때 사용 
 - 안그러면, run-time error -> 프로그램 강제 종료됨!  
 
