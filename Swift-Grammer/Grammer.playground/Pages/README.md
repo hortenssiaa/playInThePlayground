@@ -1388,7 +1388,7 @@ throw PhoneError.batteryLow(batteryLevel: 20)
 ```swift
 func checkPhoneBateryStatus(batteryLevel: Int) throws -> String {
     guard batteryLevel != -1 else { throw PhoneError.unknown }
-    guard batteryLevel > 20 else { throw             // 20 미만일때
+    guard batteryLevel > 20 else { throw // 20 이하일때
         PhoneError.bateryLow(batteryLevel: 20)
     } 
     return "배터리 상태가 정상입니다."
