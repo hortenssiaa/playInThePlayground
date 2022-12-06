@@ -1345,8 +1345,20 @@ let direc2 = CompassPoint(rawValue: "북북") // nil
 
 
 ### 15. try-catch ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/try-catch.xcplaygroundpage/Contents.swift))
-
-
+: == 애러처리
+- 프로그램 내에서 에러가 발생한 상황에 대해, 대응 & 복구하는 과정
+- Swfit에서는, run-time error발생시 처리하기 위한 방법
+    - 발생 (throwing)
+    - 감지 (catching)
+    - 전파 (propagating)
+    - 조작 (manipulating)
+- Swift 에서의 에러처리
+  > swift에서 에러는, error protocol을 따르는 type의 값으로 표현된다.
+  - error protocol은, 요구사항이 없는 빈 프로토콜 이지만,
+    > 오류를 표현하기 위해 채택해야함!
+  - enum(열거형)은, 오류의 원인을 나누고
+    - 해당 오류의 특성에 대한 추가정보를 제공하는 모델을 만드는데 적합함!
+      > swift에서는, enum을 통해 error의 종류를 표현하는게 가장 일반적!
 
 <br>
 
