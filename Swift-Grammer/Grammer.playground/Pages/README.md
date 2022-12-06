@@ -1362,18 +1362,93 @@ let direc2 = CompassPoint(rawValue: "북북") // nil
 <br>
 
 
+### 15.1. error protocol 채택한 열거형
+```swift
+enum PhoneError: Error {
+    case unknown
+    case batteryLow(batteryLevel: Int)
+}
+```
 
+<br>
+
+
+### 15.2.1 (throw) 오류 던지기
+```swift
+throw PhoneError.batteryLow(batteryLevel: 20)
+//Playground execution terminated: An error was thrown and was not caught:
+//▿ PhoneError
+//  ▿ batteryLow : 1 element
+//    - batteryLevel : 20
 ```
-💡
-1. 함수에서 발생한 
+
+<br>
+
+### 15.2.2 (throw) 함수에서 발생한 오류를 -> 해당함수를 호출한 코드에 전파 
+```swift
+func checkPhoneBateryStatus(batteryLevel: Int) throws -> String {
+    guard batteryLevel != -1 else { throw PhoneError.unknown }
+    guard batteryLevel > 20 else { throw             // 20 미만일때
+        PhoneError.bateryLow(batteryLevel: 20)
+    } 
+    return "배터리 상태가 정상입니다."
+}
 ```
+
+<br>
+
+### 15.3 (do(try)-catch) throw method 사용하기
+: throw method는 에러를 반환할 수 있으니 
+  > do-catch / try? / try! 로 오류 처리하기!
+- catch 블록 내의 지역상수 error
+  > catch 블록에는, 오류의 종류를 명시하지 않아도, 암시적으로 error라는 이름의 지역상수에 오류내용이 들어오게됨! 
+
+<br>
+
+```swift
+do {
+    try checkPhoneBateryStatus(batteryLevel: 20)
+} catch PhoneError.unknown {
+    print("알 수 없는 에러입니다.")
+} catch PhoneError.batteryLow(let betLevel) { // 연관값을, 상수 batLevel로 전달받게 함 
+    print("배터리 전원 부족 남은 배터리: \(betLevel)")
+} catch { // 그 외의 모든 오류 
+    print("그 외의 오류: \(error)
+}
+```
+
+<br>
+
+
+### 15.4 (try?) optional 값으로 오류 처리하기!
+- 오류를 optional 값으로 반환하여, 처리하기!
+- 오류일 경우에는; 값은 nil 반환 
+
+<br>
+
+```swift
+var status = try? checkPhoneBateryStatus(batteryLevel: -1) // nil
+status = try? checkPhoneBateryStatus(batteryLevel: 20) // nil
+status = try? checkPhoneBateryStatus(batteryLevel: 30) // Optional("배터리 상태가 정상입니다.")
+print(status)
+```
+
 
 
 <br>
 
 
+### 15.5 (try!) 오류가 발생하지 않을것이라고 확신하기!
+- 오류가 절대로 일어나지 않을것이라고 확신할때 사용 
+- 안그러면, run-time error -> 프로그램 강제 종료됨!  
+
+<br>
+
 ```swift
+var status2 = try! checkPhoneBateryStatus(batteryLevel: 30) // 배터리 상태가 정상입니다.
+print(status2) 
 ```
+
 
 
 <br>
