@@ -1,7 +1,7 @@
 ## #9. HeadSpace Focus App
 
 ### What's For?
-- You can see multiple flexible cells with the size change according to the contents.
+- You can see multiple cells with the size change according to the contents.
 - You can see recommendation list by tapping the See Recommendation button.
 
 ### Used Class
