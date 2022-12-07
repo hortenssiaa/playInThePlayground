@@ -1,7 +1,7 @@
 ## #7. NRC (nike running club) Onboarding App
 ### What's For?
 - You can see the view slide through UIScrollViewDelegate.
-- Also, you can see the page bar changes when the photo slides through pagecontrol.
+- Also, you can see the page bar changes when the view slides through pagecontrol.
 
 ### Framwwork
 - UIKit
