@@ -1665,7 +1665,7 @@ makeItShort(closure: {
 <br>
 
 - 16.5.4 약식2 - makeItShort 클로저 호출 (리턴 마저도 생략)
-- ***단, 단일 return 문일 때!*** 
+  > 단, 단일 return 문일 때!
 
 ```swift
 func makeItShort(closure: (Int, Int, Int) -> Int) {
