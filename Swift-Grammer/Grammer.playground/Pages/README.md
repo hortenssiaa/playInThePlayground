@@ -1532,6 +1532,85 @@ hello2("Haykung") // O
 <br>
 
 
+#### 16.2 함수의 파라미터 타입으로 클로저 전달하기 
+> 파라미터와 리턴타입이 없는 클로저
+
+<br>
+
+```swift
+func doSomething(closure: () -> ()) { // no파라미터, no리턴타입이니깐
+    closure() // doSomething 함수 호출시, 전달받은 closure가 실행되게 
+}
+
+// 함수 호출 
+doSomething(closure: { () -> () in // 함수 파라미터로 no파라미터, no리턴타입 클로저 전달 
+    print("Hello doSomething")
+})
+```
+
+
+
+<br>
+
+
+#### 16.3 반환값이 될수도 있다 (return 클로저)
+> 파라미터와 리턴타입이 없는 클로저를 return type으로 반환하는 함수 
+
+<br>
+
+```swift
+func doSomeThing2() -> () -> () {
+    return { () -> () in // no파라미터, no리턴타입이 return type이므로! 
+        print("Hello doSomeThing2")
+    }
+}
+
+// 함수 호출
+doSomeThing2()() // Hello doSomeThing2
+```
+
+
+<br>
+
+
+#### 16.4 읽기 쉬운 클로저로 바꾸기 == 후행 클로저 가능 
+: 클로저가 길어지거나, 가독성이 떨어질 때! 
+- no파라미터, no리턴타입 클로저의 경우
+  > () -> () in 생략 가능
+- 후행 클로저?
+  - 매개변수로 클로저 여러개 전달시
+    > 맨 마지막 클로저만 후행 클로저 가능!
+
+<br>
+
+```swift
+// 1. () -> () in 생략 가능 
+doSomething() {
+    print("doSomething 후행클로저 실행")
+}
+
+// 2. 단 하나의 no파라미터, no리턴타입 클로저를 매개변수로 전달시, 소괄호도 생략 가능!
+doSomething {
+    print("doSomething 소괄호도 생략")
+}
+
+// 3. 다중 후행 클로저
+// : 매개변수에 다중 클로저가 있는 경우 
+func doMultiClosure(success: () -> (), fail: () -> ()) {
+}
+
+doMultiClosure { // 첫번째 클로저 success 매개변수 레이블 생략!
+    print("success")
+} fail: {
+    print("fail")
+}
+```
+
+
+
+<br>
+
+
 ----
 <br>
 
