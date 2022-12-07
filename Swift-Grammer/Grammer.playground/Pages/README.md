@@ -1512,8 +1512,8 @@ hello() // 함수 호출과 동일 (= 클로저(함수)가 대입됐으니깐!)
   - 클로저에는 전달인자 lable 사용 **X**
   - 그래서, 클로저 호출시 일반함수 호출하는것 처럼 하면
     > Error!
-    >> ex1) hello2(name: "Hakyung") (X: name은 전달인자 lable이 아니기 때문!)
-    >> ex2) hello2("Hakyung") (O) 
+      - ex1) hello2(name: "Hakyung") (X: name은 전달인자 lable이 아니기 때문!)
+      - ex2) hello2("Hakyung") (O) 
 
 <br>
 
