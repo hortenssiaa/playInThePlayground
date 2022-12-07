@@ -1595,17 +1595,131 @@ doSomething {
 }
 
 // 3. 다중 후행 클로저
-// : 매개변수에 다중 클로저가 있는 경우 
-func doMultiClosure(success: () -> (), fail: () -> ()) {
+// : 매개변수에 다중 클로저가 있는 경우, 첫번째 매개변수 레이블 생략! 
+func doMultiClosure(success: () -> (), fail: () -> (), test3: () -> ()) {
 }
 
 doMultiClosure { // 첫번째 클로저 success 매개변수 레이블 생략!
     print("success")
 } fail: {
     print("fail")
+} test3: {
+    print("test3")
 }
 ```
 
+
+<br>
+
+
+#### 16.5 closure 간소화 하기
+: 문법 최적화하여, 간소화하기
+
+
+<br>
+
+- 16.5.1 간소화 X version
+
+```swift
+func makeItShort(closure: (Int, Int, Int) -> Int) {
+    closure(1, 2, 3)
+    // 매개변수로 전달받은 closure를 실행하는데, 
+    // 이때, 매개변수로 1,2,3을 넘겨주고 있다. 
+}
+```
+
+
+<br>
+
+- 16.5.2 경량문법 - makeItShort 클로저 호출 
+
+```swift
+func makeItShort(closure: (Int, Int, Int) -> Int) {
+    closure(1, 2, 3)
+}
+
+makeItShort(closure: { (a, b, c) in // 1. 파라미터 data type 생략 
+    retun a + b + c // 2. Type 유추를 통해, return 타입 생략 가능   
+})
+```
+
+
+<br>
+
+- 16.5.3 약식 - makeItShort 클로저 호출 (파라미터, 리턴 형식 생략)
+
+```swift
+func makeItShort(closure: (Int, Int, Int) -> Int) {
+    closure(1, 2, 3)
+}
+
+makeItShort(closure: {
+    return $0 + $1 + $2
+    // 매개변수 이름 생략 -> 매개변수를 약식 인수 $0, 1, 2 이름으로 대체!
+    // >> () -> () in 키워드 삭제 가능!
+})
+```
+
+
+
+<br>
+
+- 16.5.4 약식2 - makeItShort 클로저 호출 (리턴 마저도 생략)
+- ***단, 단일 return 문일 때!*** 
+
+```swift
+func makeItShort(closure: (Int, Int, Int) -> Int) {
+    closure(1, 2, 3)
+}
+
+// O
+makeItShort(closure: {
+    $0 + $1 + $2
+})
+
+// X : Error!
+makeItShort(closure: {
+    print("test")
+    $0 + $1 + $2
+})
+```
+
+
+
+<br>
+
+- 16.5.5 후행 클로저 - makeItShort 클로저 호출 (closure: 생략)
+
+```swift
+func makeItShort(closure: (Int, Int, Int) -> Int) {
+    closure(1, 2, 3)
+}
+
+makeItShort() {
+    $0 + $1 + $2
+}
+```
+
+
+<br>
+
+- 16.5.6 후행 클로저2 - makeItShort 클로저 호출 (closure:, () 마저도 생략)
+
+```swift
+func makeItShort(closure: (Int, Int, Int) -> Int) {
+    closure(1, 2, 3)
+}
+
+makeItShort {
+    $0 + $1 + $2
+}
+```
+
+<br>
+
+#### 16.6 Class instance 로 클로저 할당시; 
+- 클로저와, 인스턴스 사이에 강한 순환참조가 생겨서
+  > 메모리 leak 발생 가능..
 
 
 <br>
