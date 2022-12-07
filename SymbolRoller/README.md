@@ -2,12 +2,9 @@
 ### How it works?
 - Symbol image is randomly changed when Reload button is tapped.
 - Thanks to Auto-layout and constraints, it works the same for all Apple devices.
-<br>
 
 ### Framework
 - UIKit
-
-<br>
 
 ### What I Learned?
 - Studied how ViewController works with UI components.
