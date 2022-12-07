@@ -17,6 +17,7 @@
 ### What I Learned?
 - Studied how ViewController works with UI components.
 - Learned how to set auto-layout with constraints in Storyboard.
+- Learned how to split into mutiple navigation.
 
 <br><br>
 <img width="300" alt="InstaSearchApp" src="https://user-images.githubusercontent.com/16066576/194843405-522c6729-4055-410b-ad73-b4965b2cf0d1.gif">
