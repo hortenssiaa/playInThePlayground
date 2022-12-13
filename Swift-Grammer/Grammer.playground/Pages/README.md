@@ -1734,6 +1734,28 @@ makeItShort {
 
 
 ### 17. Map, Filter, Reduce ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Map%2C%20Filter%2C%20Reduce.xcplaygroundpage/Contents.swift))
+- Swift 에서 제공하는 고차함수 : Map, Filter, Reduce
+  > 모두 collection type
+- 고차함수란?
+  > 다른 함수를 전달인자로 받거나, 함수 실행의 결과를 함수로 변환하는 함수
+
+
+
+<br>
+
+#### 17.1 map
+- map 함수는, 컨테이너 내부에 기존 테이터를 변형하여 -> 새로운 컨테이너를 생성한다. 
+
+```swift
+let numbers = [0, 1, 2, 3]
+let mapArray = numbers.map { (number) -> Int in 
+    return number * 2
+}
+
+print("numbers: \(numbers)") // numbers: [0, 1, 2, 3]
+print("mapArray: \(mapArray)") // mapArray: [0, 2, 4, 6]
+```
+
 
 
 
