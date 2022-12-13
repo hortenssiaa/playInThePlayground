@@ -1762,5 +1762,3 @@ print("mapArray: \(mapArray)") // mapArray: [0, 2, 4, 6]
 <br>
 
 
-----
-<br>
