@@ -1757,6 +1757,28 @@ print("mapArray: \(mapArray)") // mapArray: [0, 2, 4, 6]
 ```
 
 
+<br>
+
+
+#### 17.2 filter
+- 컨테이너 내부의 값을 걸러서, 새로운 컨테이너로 추출 
+
+```swift
+let intArray = [10, 5, 20, 13, 4]
+let filterArray = intArray.filter { $0 > 5 }
+
+print("intArray: \(intArray)") // [10, 5, 20, 13, 4]
+print("filter: \(filterArray)") // [10, 20, 13]
+```
+
+<br>
+
+#### 17.3 reduce
+- 컨테이너의 요소를 -> 하나로 통합시켜줌  
+
+```swift
+let someArray = [1, 2, 3, 4, 5]
+let reduceResult = someArray.reduce(0) // 0은 
 
 
 <br>
