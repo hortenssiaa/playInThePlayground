@@ -1778,7 +1778,9 @@ print("filter: \(filterArray)") // [10, 20, 13]
 
 ```swift
 let someArray = [1, 2, 3, 4, 5]
-let reduceResult = someArray.reduce(0) // 0은 
+let reduceResult = someArray.reduce(0) { // 0은 초기값, 설정한 초기값부터 + someArray 배열의 값을 다 더하기
+    (result: Int, element: Int) -> Int in // result: 총 더한 값, 
+```
 
 
 <br>
