@@ -33,7 +33,8 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 12. [HeadSpace Focus App (Navigation)](https://github.com/hortenssiaa/playInThePlayground/tree/master/HeadSpaceFocus_Navigation)  ← Navigation View added version of No.9
 <br>
 
-#### - Combine
+#### - Combine [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Combine_practice/Hello%20Combine.playground/Pages)
+
 13. [Publisher & Subscriber](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Publisher%20%26%20Subscriber.xcplaygroundpage/Contents.swift)
 14. [Subject](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Subject.xcplaygroundpage/Contents.swift)
 15. [Subscription](https://github.com/hortenssiaa/playInThePlayground/blob/master/Combine_practice/Hello%20Combine.playground/Pages/Subscription.xcplaygroundpage/Contents.swift)
