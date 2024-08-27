@@ -77,9 +77,81 @@
 `순서` | O | X
 
 ----
+
+### tuple
+- 여러 데이터를 하나의 값으로 표현
+- 세부 데이터 접근시, 포지션(index 번호) 또는 이름으로 접근 가능
+    ```swift
+    var phone = (os: "iOS", model: "iPhone13")
+
+    phone.0 // 'iOS'
+    phone.os // 'iOS'
+    ```
+
+
+### enum
+- 서로 관계있는 값들을 모아서 표현한 것이 enum
+- 특정 타입들을 표시할때 사용하기 좋음
+  ```swift
+  // 요일을 enum 으로 만들어보기 
+  enum WeetDay {
+      case mon
+      case tue
+      case wed
+      case thu
+      case fri
+  }
+
+  var today: WeekDay = .mon
+
+
+  // 미디어 타입을 enum으로 만들어보기
+  enum MediaType {
+      case audio
+      case video
+  }
+
+  var mediaType: MediaType = .audio
+  ```
+
+  #### * associated value(연관값)을 갖고있는 형태 표현
+  ```swift
+  enum MediaType {
+      case audio(String)
+      case video(String)
+  }
+
+  var mp3: Mediatype = .audio("mp3")
+  var h264: Mediatype = .video("h264")
+  ```
+
+
+  #### * enum 표시시, 값을 할당하여 표시하는 경우
+  - Int 타입의 경우, case의 순서대로 (위에서 부터) 0부터 시작
+  - String 의 경우, case 이름을 따르거나, 새로 지정할 수 있음
+  ```swift
+  enum MasterLevel: Int {
+      case beginner
+      case intermediate
+      case professional
+  }
+
+  let pro = MasterLevel(rawValue: 2) // case professional
+  let otherLevel = MasterLevel(rawValue: 5) // -> nil
+
+
+  enum Direction: String {
+      case up
+      case down = "ddd"
+  }
+
+  let up = Direction(rawValue: "up")
+  let otherDirection = Direction(rawValue: "left") // -> nil
+  
+  ```
+
+----
 <br>
-
-
 
 ### 3. Function ([code](https://github.com/hortenssiaa/playInThePlayground/blob/master/Swift-Grammer/Grammer.playground/Pages/Function.xcplaygroundpage/Contents.swift))
 : Swift는 함수형 프로그래밍 패러다임을 포함한, 다중 패러다임을 포함한 언어
