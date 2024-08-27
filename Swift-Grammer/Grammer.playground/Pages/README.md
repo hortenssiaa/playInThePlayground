@@ -45,7 +45,7 @@
   - 축약형
     ```swift
     var numbers: [Int] = []
-    var numbers: [Int]
+    var numbers = [Int]()
     ```
 <br>
 
@@ -63,9 +63,11 @@
 <br>
 
 #### 2.3 **Set**
-  - only 기본형
+  - only 기본형 (축약형 X)
     ```swift
     var set: Set<Int> = Set<Int>()
+    var set: Set<Int> = []
+    var set = Set<Int>([2, 3, 4, 5])
     ```
 <br>
 
