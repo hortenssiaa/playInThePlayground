@@ -399,18 +399,22 @@ if let result = number { // optional 추출 성공 (실제 값이 있는 경우�
 <br>
 
 #### 6.1.3 **optional 비강제해제 (guard)**
-- guaurd 문으로 추출시;
+- guard 문으로 추출시;
+  - guard let 을 이용하면, 메소드 초기에 옵셔널 타입에서 값이 있는 경우를 검사할 수 있음
   - guard 다음으로 오는 함수 전체에서 사용 가능!
   - 안전함! 
 ```swift
-func test() {
-    let number: Int? = 3
-    guard let result = number else { return }
-    print(result)
+let number: Int? = nil
+number = 33
+func printNumber() {
+    guard let unwrapped = numbre else {
+        print("number is missing")
+        return
+    }
+    print("numer: \(number)")
 }
 
-test()
-// 3
+printNumber() // 33
 ```
 <br>
 
@@ -447,6 +451,20 @@ print(stringToInt + 1)
 <br>
 
 
+#### 6.1.6 **optional coalescing**
+- optional 타입에 값이 있는 경우는, 해당 값을 넘겨주고
+- optional 타입에 값이 없는 경우는, default값으로 nil coalescing 을 이용하여 설정할 수 있음
+  - ?? 을 이용해서 default 값 설정해줌
+```swift
+let age: Int? = nil
+let getAge = age ?? 30 // 30
+
+age = 10
+let getAge2 = age ?? 30 // 10
+```
+<br>
+
+
 ----
 <br>
 
@@ -471,7 +489,7 @@ struct Developer {
 
 struct Company {
     let name: String
-    var developer: Developer?
+    var developer: Developer? // 개발자는 있을 수 도, 없을 수 도 있다.
 }
 
 var developer = Developer(name: "Miel")
