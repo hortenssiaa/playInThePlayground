@@ -22,6 +22,7 @@
 15. [try-catch](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#15-try-catch-code)
 16. [Closure](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#16-closure-code)
 17. [Map, Filter, Reduce](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#17-map-filter-reduce-code)
+18. [Typecasting](https://github.com/hortenssiaa/playInThePlayground/tree/master/Swift-Grammer/Grammer.playground/Pages#18-typecasting)
 
 ----
 <br>
@@ -1890,3 +1891,39 @@ print("reduceResult: \(reduceResult)")
 <br>
 
 
+
+----
+<br>
+
+
+
+
+
+
+### 18. Typecasting 
+- as? 를 이용해서 typecasting 하는 것을 도와줌
+- as? 는 optional 타입임
+
+```swift
+class Animal {
+}
+
+class Cat: Animal {
+}
+
+class Dog: Animal {
+    func bark() {
+        print("wal wal!")
+    }
+}
+
+let pets: [Animal] = [Cat(), Dog(), Cat(), Dog()]
+
+for pet in pets {
+    if let dog = pet as? Dog {
+        dog.bark()
+    }
+}
+// wal wal!
+// wal wal!
+```
