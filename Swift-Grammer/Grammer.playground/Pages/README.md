@@ -382,15 +382,16 @@ print(number!)
   - optional값이 잘 추출 됐으면 → if 문 실행
   - optional값이 nil이면 → else 문 실행
 - if-else 문으로 추출시;
+  - if let 을 이용해서 unwrapping 함!
   - 변수/상수는 if-else문 내에서만 사용 가능
   - 안전함!
 ```swift
 var number: Int? = nil
 
-if result = number { // optional 추출 성공
-    print(result) // optional 추출값 
+if let result = number { // optional 추출 성공 (실제 값이 있는 경우만 if 문을 타게 된다) 
+    print("number: \(result)") // optional 추출값 
 } else { // fail
-    print("optional binding fails")
+    print("number is missing.")
 }
 
 // optional binding fails
