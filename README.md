@@ -58,6 +58,6 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 28. [Github user-profile-search-Listed App](https://github.com/hortenssiaa/playInThePlayground/tree/master/GithubUserSearch)
 <br>
 
-#### - MVVM [(link)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Network-in-iOS)
+#### - MVVM 
 29. [Apple Framework App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine-MVVM)
 
