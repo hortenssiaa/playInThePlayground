@@ -55,3 +55,9 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 26. [Using Combine](https://github.com/hortenssiaa/playInThePlayground/blob/master/Network-in-iOS/Network%20in%20iOS.playground/Pages/Using%20Combine.xcplaygroundpage/Contents.swift)
 ##### * Network applied project
 27. [Github user-profile-search App](https://github.com/hortenssiaa/playInThePlayground/tree/master/Github-User-Profile)
+28. [Github user-profile-search-Listed App](https://github.com/hortenssiaa/playInThePlayground/tree/master/GithubUserSearch)
+<br>
+
+#### - MVVM 
+29. [Apple Framework App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine-MVVM)
+
