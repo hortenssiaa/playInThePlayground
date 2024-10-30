@@ -60,5 +60,5 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 
 #### - MVVM 
 29. [Apple Framework App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine-MVVM)
-30. [Github user-profile-search App (MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Github-User-Profile-MVVM)
-31. [Github user-profile-search-Listed App (MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/GithubUserSearch-MVVM)
+30. [Github user-profile-search App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Github-User-Profile-MVVM)
+31. [Github user-profile-search-Listed App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/GithubUserSearch-MVVM)
