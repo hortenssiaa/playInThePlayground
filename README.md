@@ -62,3 +62,8 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 29. [Apple Framework App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_Combine-MVVM)
 30. [Github user-profile-search App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/Github-User-Profile-MVVM)
 31. [Github user-profile-search-Listed App (Combine + MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/GithubUserSearch-MVVM)
+
+<br>
+
+#### - SwiftUI 
+32. [StockRank App (SwiftUI)](https://github.com/hortenssiaa/playInThePlayground/tree/master/StockRank-SwiftUI)
