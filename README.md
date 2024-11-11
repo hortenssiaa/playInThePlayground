@@ -65,7 +65,8 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 
 <br>
 
-#### - SwiftUI (Feat. @State, @Binding, @StateObject, @ObservedObject, @EnvironmentObject)
+#### - SwiftUI 
+##### (Feat. @State, @Binding, @StateObject, @ObservedObject, @EnvironmentObject)
 32. [StockRank App (SwiftUI)](https://github.com/hortenssiaa/playInThePlayground/tree/master/StockRank-SwiftUI)
 33. [Apple Framework App (SwiftUI)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework-SwiftUI)
 34. [StockRank App (SwiftUI+MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/StockRank-SwiftUI_MVVM)
