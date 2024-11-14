@@ -71,3 +71,5 @@ Click the folder🗂 and check out🔎 it's brief introduction🏷 & preview📱
 33. [Apple Framework App (SwiftUI)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework-SwiftUI)
 34. [StockRank App (SwiftUI+MVVM)](https://github.com/hortenssiaa/playInThePlayground/tree/master/StockRank-SwiftUI_MVVM)
 35. [@EnvironmentObject App](https://github.com/hortenssiaa/playInThePlayground/tree/master/EnvironmentObjTest)
+36. [[Refactoring] AppleFramework App (UIKit+SwfitUI)](https://github.com/hortenssiaa/playInThePlayground/tree/master/AppleFramework_UIKit%2BSwfitUI)
+37. [[Refactoring] GithubUserSearch App (UIKit+SwiftUI)](https://github.com/hortenssiaa/playInThePlayground/tree/master/GithubUserSearch-UIKit%2BSwiftUI)
