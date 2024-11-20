@@ -76,7 +76,7 @@ class BenifitListViewController: UIViewController {
             .sink { benefit in
                 let sb = UIStoryboard(name: "ButtonBenefit", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "ButtonBenefitViewController") as! ButtonBenefitViewController
-                vc.benefit = benefit
+                vc.viewModel = ButtonBenefitViewModel(benefit: benefit)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
     }
