@@ -15,6 +15,8 @@
 		94BD336D285D5CA1008DA3B7 /* TossBenefitTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BD336C285D5CA1008DA3B7 /* TossBenefitTabTests.swift */; };
 		94BD3377285D5CA1008DA3B7 /* TossBenefitTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BD3376285D5CA1008DA3B7 /* TossBenefitTabUITests.swift */; };
 		94BD3379285D5CA1008DA3B7 /* TossBenefitTabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BD3378285D5CA1008DA3B7 /* TossBenefitTabUITestsLaunchTests.swift */; };
+		B33B50D32CEC764100CE4E13 /* BenefitGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B50D22CEC764100CE4E13 /* BenefitGuideView.swift */; };
+		B33B50D52CEC882800CE4E13 /* BenefitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B50D42CEC882800CE4E13 /* BenefitListViewModel.swift */; };
 		B3E216012CE72CCF001C6A1D /* BenifitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E216002CE72CCF001C6A1D /* BenifitListViewController.swift */; };
 		B3E216032CEB1072001C6A1D /* MyPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E216022CEB1072001C6A1D /* MyPointCell.swift */; };
 		B3E216092CEB10B2001C6A1D /* TodaysBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E216082CEB10B2001C6A1D /* TodaysBenefitCell.swift */; };
@@ -59,6 +61,8 @@
 		94BD3372285D5CA1008DA3B7 /* TossBenefitTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TossBenefitTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BD3376285D5CA1008DA3B7 /* TossBenefitTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossBenefitTabUITests.swift; sourceTree = "<group>"; };
 		94BD3378285D5CA1008DA3B7 /* TossBenefitTabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossBenefitTabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B33B50D22CEC764100CE4E13 /* BenefitGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitGuideView.swift; sourceTree = "<group>"; };
+		B33B50D42CEC882800CE4E13 /* BenefitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitListViewModel.swift; sourceTree = "<group>"; };
 		B3E216002CE72CCF001C6A1D /* BenifitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenifitListViewController.swift; sourceTree = "<group>"; };
 		B3E216022CEB1072001C6A1D /* MyPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointCell.swift; sourceTree = "<group>"; };
 		B3E216082CEB10B2001C6A1D /* TodaysBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysBenefitCell.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 			children = (
 				94BD335B285D5C9E008DA3B7 /* Main.storyboard */,
 				B3E216002CE72CCF001C6A1D /* BenifitListViewController.swift */,
+				B33B50D42CEC882800CE4E13 /* BenefitListViewModel.swift */,
 				B3E216022CEB1072001C6A1D /* MyPointCell.swift */,
 				B3E216082CEB10B2001C6A1D /* TodaysBenefitCell.swift */,
 				B3E2160C2CEB10E7001C6A1D /* OtherBenefitCell.swift */,
@@ -188,6 +193,7 @@
 			children = (
 				B3E2161F2CEB3899001C6A1D /* ButtonBenefit.storyboard */,
 				B3E216282CEB3933001C6A1D /* ButtonBenefitViewController.swift */,
+				B33B50D22CEC764100CE4E13 /* BenefitGuideView.swift */,
 			);
 			path = ButtonBenefit;
 			sourceTree = "<group>";
@@ -333,10 +339,12 @@
 				B3E216162CEB1F2E001C6A1D /* TodaySectionItem.swift in Sources */,
 				94BD3356285D5C9E008DA3B7 /* AppDelegate.swift in Sources */,
 				B3E216132CEB16AF001C6A1D /* MyPoint.swift in Sources */,
+				B33B50D52CEC882800CE4E13 /* BenefitListViewModel.swift in Sources */,
 				94BD3358285D5C9E008DA3B7 /* SceneDelegate.swift in Sources */,
 				B3E2162B2CEB394A001C6A1D /* MyPointViewController.swift in Sources */,
 				B3E2160D2CEB10E7001C6A1D /* OtherBenefitCell.swift in Sources */,
 				B3E216012CE72CCF001C6A1D /* BenifitListViewController.swift in Sources */,
+				B33B50D32CEC764100CE4E13 /* BenefitGuideView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

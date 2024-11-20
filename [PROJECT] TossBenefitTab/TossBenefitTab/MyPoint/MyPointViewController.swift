@@ -8,6 +8,8 @@
 import UIKit
 
 class MyPointViewController: UIViewController {
+    
+    var point: MyPoint = MyPoint.default
 
     override func viewDidLoad() {
         super.viewDidLoad()
