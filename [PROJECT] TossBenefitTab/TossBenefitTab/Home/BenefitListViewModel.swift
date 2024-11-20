@@ -6,10 +6,14 @@
 //
 
 import Foundation
+import Combine
 
 final class BenefitListViewModel {
     @Published var todaySectionItems: [AnyHashable] = []
     @Published var otherSectionItems: [AnyHashable] = []
+    
+    let benefitDidTapped = PassthroughSubject<Benefit, Never>()
+    let pointDidTapped = PassthroughSubject<MyPoint, Never>()
     
     // input, output - user interaction
     func fetchItems() {
