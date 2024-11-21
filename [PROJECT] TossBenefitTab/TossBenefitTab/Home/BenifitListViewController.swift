@@ -67,7 +67,7 @@ class BenifitListViewController: UIViewController {
             .sink { point in
                 let sb = UIStoryboard(name: "MyPoint", bundle: nil)
                 let vc = sb.instantiateViewController(withIdentifier: "MyPointViewController") as! MyPointViewController
-                vc.point = point
+                vc.viewModel = MyPointViewModel(point: point)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
         
@@ -94,6 +94,9 @@ class BenifitListViewController: UIViewController {
     private func configureCollectionView() {
         // presentation - cell (section-item binding)
         dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: collectionView, cellProvider: { collectionView, indexPath, item in
+            print("[configureCollectionView] indexPath >>> \(indexPath)")
+            print("[configureCollectionView] indexPath.section >>> \(indexPath.section)")
+            print("[configureCollectionView] indexPath.item >>> \(indexPath.item)")
             guard let section = Section(rawValue: indexPath.section) else { return nil }
             let cell = self.configureCell(for: section, item: item, collectionView: collectionView, indexPath: indexPath)
             return cell

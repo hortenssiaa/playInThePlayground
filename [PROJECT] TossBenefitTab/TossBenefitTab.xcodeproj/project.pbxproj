@@ -18,6 +18,7 @@
 		B33B50D32CEC764100CE4E13 /* BenefitGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B50D22CEC764100CE4E13 /* BenefitGuideView.swift */; };
 		B33B50D52CEC882800CE4E13 /* BenefitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B50D42CEC882800CE4E13 /* BenefitListViewModel.swift */; };
 		B33B50DA2CEDB54800CE4E13 /* ButtonBenefitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B50D92CEDB54800CE4E13 /* ButtonBenefitViewModel.swift */; };
+		B33B50DC2CEDBF1400CE4E13 /* MyPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33B50DB2CEDBF1400CE4E13 /* MyPointViewModel.swift */; };
 		B3E216012CE72CCF001C6A1D /* BenifitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E216002CE72CCF001C6A1D /* BenifitListViewController.swift */; };
 		B3E216032CEB1072001C6A1D /* MyPointCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E216022CEB1072001C6A1D /* MyPointCell.swift */; };
 		B3E216092CEB10B2001C6A1D /* TodaysBenefitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E216082CEB10B2001C6A1D /* TodaysBenefitCell.swift */; };
@@ -65,6 +66,7 @@
 		B33B50D22CEC764100CE4E13 /* BenefitGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitGuideView.swift; sourceTree = "<group>"; };
 		B33B50D42CEC882800CE4E13 /* BenefitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitListViewModel.swift; sourceTree = "<group>"; };
 		B33B50D92CEDB54800CE4E13 /* ButtonBenefitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBenefitViewModel.swift; sourceTree = "<group>"; };
+		B33B50DB2CEDBF1400CE4E13 /* MyPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointViewModel.swift; sourceTree = "<group>"; };
 		B3E216002CE72CCF001C6A1D /* BenifitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenifitListViewController.swift; sourceTree = "<group>"; };
 		B3E216022CEB1072001C6A1D /* MyPointCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPointCell.swift; sourceTree = "<group>"; };
 		B3E216082CEB10B2001C6A1D /* TodaysBenefitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodaysBenefitCell.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			children = (
 				B3E216182CEB376D001C6A1D /* MyPoint.storyboard */,
 				B3E2162A2CEB394A001C6A1D /* MyPointViewController.swift */,
+				B33B50DB2CEDBF1400CE4E13 /* MyPointViewModel.swift */,
 			);
 			path = MyPoint;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				94BD3358285D5C9E008DA3B7 /* SceneDelegate.swift in Sources */,
 				B3E2162B2CEB394A001C6A1D /* MyPointViewController.swift in Sources */,
 				B3E2160D2CEB10E7001C6A1D /* OtherBenefitCell.swift in Sources */,
+				B33B50DC2CEDBF1400CE4E13 /* MyPointViewModel.swift in Sources */,
 				B3E216012CE72CCF001C6A1D /* BenifitListViewController.swift in Sources */,
 				B33B50D32CEC764100CE4E13 /* BenefitGuideView.swift in Sources */,
 			);
