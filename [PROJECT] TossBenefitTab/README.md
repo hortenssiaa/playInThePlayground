@@ -1,4 +1,4 @@
-## 1. [PROJECT] Toss Benefit Tab (토스혜택 뷰 클론코딩)
+## 1. [PROJECT] Toss Benefit Tab (토스혜택 뷰 클론코딩)
 
 ### Used Class
 - UICollectionViewDiffableDataSource
