@@ -11,7 +11,6 @@
 		9402EE1228673D9C00D33FDD /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE1028673D9C00D33FDD /* Resource.swift */; };
 		9402EE1728673FB100D33FDD /* Publisher+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9402EE1628673FB100D33FDD /* Publisher+Utils.swift */; };
 		94A38E512868307C000691E1 /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A38E4C2868307C000691E1 /* ItemInfo.swift */; };
-		94A38E5C286830EA000691E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94A38E57286830EA000691E1 /* Main.storyboard */; };
 		94BB227E28669A15004FC34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB227D28669A15004FC34D /* AppDelegate.swift */; };
 		94BB228028669A15004FC34D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB227F28669A15004FC34D /* SceneDelegate.swift */; };
 		94BB228728669A16004FC34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94BB228628669A16004FC34D /* Assets.xcassets */; };
@@ -19,6 +18,16 @@
 		94BB229528669A17004FC34D /* CarrotHomeTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB229428669A17004FC34D /* CarrotHomeTabTests.swift */; };
 		94BB229F28669A17004FC34D /* CarrotHomeTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB229E28669A17004FC34D /* CarrotHomeTabUITests.swift */; };
 		94BB22A128669A17004FC34D /* CarrotHomeTabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB22A028669A17004FC34D /* CarrotHomeTabUITestsLaunchTests.swift */; };
+		B30027F42CF44C0C00DA98BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027F32CF44C0C00DA98BB /* HomeViewController.swift */; };
+		B30027F62CF44C2800DA98BB /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027F52CF44C2800DA98BB /* MainNavigationController.swift */; };
+		B30027F82CF44C3800DA98BB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027F72CF44C3800DA98BB /* MainTabBarController.swift */; };
+		B30027FA2CF44CE400DA98BB /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30027F92CF44CE400DA98BB /* Detail.storyboard */; };
+		B30027FE2CF45E0F00DA98BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30027FD2CF45E0F00DA98BB /* Main.storyboard */; };
+		B30028002CF45EF900DA98BB /* MyTownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027FF2CF45EF900DA98BB /* MyTownViewController.swift */; };
+		B30028022CF45F0100DA98BB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028012CF45F0100DA98BB /* ChatViewController.swift */; };
+		B30028042CF45F0900DA98BB /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028032CF45F0900DA98BB /* MyProfileViewController.swift */; };
+		B30028062CF4640300DA98BB /* CustomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028052CF4640300DA98BB /* CustomBarItem.swift */; };
+		B30028082CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028072CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +52,6 @@
 		9402EE1028673D9C00D33FDD /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		9402EE1628673FB100D33FDD /* Publisher+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Publisher+Utils.swift"; sourceTree = "<group>"; };
 		94A38E4C2868307C000691E1 /* ItemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
-		94A38E58286830EA000691E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94BB227A28669A15004FC34D /* CarrotHomeTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrotHomeTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BB227D28669A15004FC34D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94BB227F28669A15004FC34D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +63,16 @@
 		94BB229A28669A17004FC34D /* CarrotHomeTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarrotHomeTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BB229E28669A17004FC34D /* CarrotHomeTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotHomeTabUITests.swift; sourceTree = "<group>"; };
 		94BB22A028669A17004FC34D /* CarrotHomeTabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotHomeTabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B30027F32CF44C0C00DA98BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B30027F52CF44C2800DA98BB /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		B30027F72CF44C3800DA98BB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B30027F92CF44CE400DA98BB /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		B30027FD2CF45E0F00DA98BB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B30027FF2CF45EF900DA98BB /* MyTownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTownViewController.swift; sourceTree = "<group>"; };
+		B30028012CF45F0100DA98BB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B30028032CF45F0900DA98BB /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		B30028052CF4640300DA98BB /* CustomBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarItem.swift; sourceTree = "<group>"; };
+		B30028072CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +150,16 @@
 			children = (
 				94BB227D28669A15004FC34D /* AppDelegate.swift */,
 				94BB227F28669A15004FC34D /* SceneDelegate.swift */,
-				94A38E57286830EA000691E1 /* Main.storyboard */,
+				B30027FD2CF45E0F00DA98BB /* Main.storyboard */,
+				B30027F32CF44C0C00DA98BB /* HomeViewController.swift */,
+				B30027F52CF44C2800DA98BB /* MainNavigationController.swift */,
+				B30027F72CF44C3800DA98BB /* MainTabBarController.swift */,
+				B30028052CF4640300DA98BB /* CustomBarItem.swift */,
+				B30028072CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift */,
+				B30027F92CF44CE400DA98BB /* Detail.storyboard */,
+				B30027FF2CF45EF900DA98BB /* MyTownViewController.swift */,
+				B30028012CF45F0100DA98BB /* ChatViewController.swift */,
+				B30028032CF45F0900DA98BB /* MyProfileViewController.swift */,
 				9402EE1528673FB100D33FDD /* Utils */,
 				9402EE0E28673D9C00D33FDD /* Network */,
 				94A38E4B2868307C000691E1 /* Model */,
@@ -269,8 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				94BB228A28669A16004FC34D /* LaunchScreen.storyboard in Resources */,
-				94A38E5C286830EA000691E1 /* Main.storyboard in Resources */,
 				94BB228728669A16004FC34D /* Assets.xcassets in Resources */,
+				B30027FA2CF44CE400DA98BB /* Detail.storyboard in Resources */,
+				B30027FE2CF45E0F00DA98BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,9 +325,17 @@
 			files = (
 				94BB227E28669A15004FC34D /* AppDelegate.swift in Sources */,
 				94A38E512868307C000691E1 /* ItemInfo.swift in Sources */,
+				B30028022CF45F0100DA98BB /* ChatViewController.swift in Sources */,
+				B30027F82CF44C3800DA98BB /* MainTabBarController.swift in Sources */,
+				B30027F62CF44C2800DA98BB /* MainNavigationController.swift in Sources */,
 				94BB228028669A15004FC34D /* SceneDelegate.swift in Sources */,
+				B30028082CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift in Sources */,
+				B30028042CF45F0900DA98BB /* MyProfileViewController.swift in Sources */,
 				9402EE1728673FB100D33FDD /* Publisher+Utils.swift in Sources */,
+				B30028062CF4640300DA98BB /* CustomBarItem.swift in Sources */,
 				9402EE1128673D9C00D33FDD /* NetworkService.swift in Sources */,
+				B30027F42CF44C0C00DA98BB /* HomeViewController.swift in Sources */,
+				B30028002CF45EF900DA98BB /* MyTownViewController.swift in Sources */,
 				9402EE1228673D9C00D33FDD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +373,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		94A38E57286830EA000691E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94A38E58286830EA000691E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		94BB228828669A16004FC34D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
