@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,16 +18,7 @@
 		94BB229528669A17004FC34D /* CarrotHomeTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB229428669A17004FC34D /* CarrotHomeTabTests.swift */; };
 		94BB229F28669A17004FC34D /* CarrotHomeTabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB229E28669A17004FC34D /* CarrotHomeTabUITests.swift */; };
 		94BB22A128669A17004FC34D /* CarrotHomeTabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BB22A028669A17004FC34D /* CarrotHomeTabUITestsLaunchTests.swift */; };
-		B30027F42CF44C0C00DA98BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027F32CF44C0C00DA98BB /* HomeViewController.swift */; };
-		B30027F62CF44C2800DA98BB /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027F52CF44C2800DA98BB /* MainNavigationController.swift */; };
-		B30027F82CF44C3800DA98BB /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027F72CF44C3800DA98BB /* MainTabBarController.swift */; };
-		B30027FA2CF44CE400DA98BB /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30027F92CF44CE400DA98BB /* Detail.storyboard */; };
-		B30027FE2CF45E0F00DA98BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30027FD2CF45E0F00DA98BB /* Main.storyboard */; };
-		B30028002CF45EF900DA98BB /* MyTownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30027FF2CF45EF900DA98BB /* MyTownViewController.swift */; };
-		B30028022CF45F0100DA98BB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028012CF45F0100DA98BB /* ChatViewController.swift */; };
-		B30028042CF45F0900DA98BB /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028032CF45F0900DA98BB /* MyProfileViewController.swift */; };
-		B30028062CF4640300DA98BB /* CustomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028052CF4640300DA98BB /* CustomBarItem.swift */; };
-		B30028082CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30028072CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift */; };
+		B300281C2CF5DE3400DA98BB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B300281B2CF5DE3400DA98BB /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,23 +54,24 @@
 		94BB229A28669A17004FC34D /* CarrotHomeTabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarrotHomeTabUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BB229E28669A17004FC34D /* CarrotHomeTabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotHomeTabUITests.swift; sourceTree = "<group>"; };
 		94BB22A028669A17004FC34D /* CarrotHomeTabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrotHomeTabUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B30027F32CF44C0C00DA98BB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		B30027F52CF44C2800DA98BB /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		B30027F72CF44C3800DA98BB /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		B30027F92CF44CE400DA98BB /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
-		B30027FD2CF45E0F00DA98BB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		B30027FF2CF45EF900DA98BB /* MyTownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTownViewController.swift; sourceTree = "<group>"; };
-		B30028012CF45F0100DA98BB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		B30028032CF45F0900DA98BB /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
-		B30028052CF4640300DA98BB /* CustomBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarItem.swift; sourceTree = "<group>"; };
-		B30028072CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B30028092CF59E1D00DA98BB /* Home */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Home; sourceTree = "<group>"; };
+		B300280A2CF59E2800DA98BB /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		B300280B2CF59E3300DA98BB /* Extentions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extentions; sourceTree = "<group>"; };
+		B300280C2CF59E4900DA98BB /* MyTown */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MyTown; sourceTree = "<group>"; };
+		B300280D2CF59E5000DA98BB /* Chat */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Chat; sourceTree = "<group>"; };
+		B300280E2CF59E5700DA98BB /* MyProfile */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MyProfile; sourceTree = "<group>"; };
+		B30028112CF59E8A00DA98BB /* Detail */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Detail; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		94BB227728669A15004FC34D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B300281C2CF5DE3400DA98BB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,19 +142,16 @@
 			children = (
 				94BB227D28669A15004FC34D /* AppDelegate.swift */,
 				94BB227F28669A15004FC34D /* SceneDelegate.swift */,
-				B30027FD2CF45E0F00DA98BB /* Main.storyboard */,
-				B30027F32CF44C0C00DA98BB /* HomeViewController.swift */,
-				B30027F52CF44C2800DA98BB /* MainNavigationController.swift */,
-				B30027F72CF44C3800DA98BB /* MainTabBarController.swift */,
-				B30028052CF4640300DA98BB /* CustomBarItem.swift */,
-				B30028072CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift */,
-				B30027F92CF44CE400DA98BB /* Detail.storyboard */,
-				B30027FF2CF45EF900DA98BB /* MyTownViewController.swift */,
-				B30028012CF45F0100DA98BB /* ChatViewController.swift */,
-				B30028032CF45F0900DA98BB /* MyProfileViewController.swift */,
+				B300280A2CF59E2800DA98BB /* Views */,
+				94A38E4B2868307C000691E1 /* Model */,
+				B30028092CF59E1D00DA98BB /* Home */,
+				B30028112CF59E8A00DA98BB /* Detail */,
+				B300280C2CF59E4900DA98BB /* MyTown */,
+				B300280D2CF59E5000DA98BB /* Chat */,
+				B300280E2CF59E5700DA98BB /* MyProfile */,
 				9402EE1528673FB100D33FDD /* Utils */,
 				9402EE0E28673D9C00D33FDD /* Network */,
-				94A38E4B2868307C000691E1 /* Model */,
+				B300280B2CF59E3300DA98BB /* Extentions */,
 				94BB228628669A16004FC34D /* Assets.xcassets */,
 				94BB228828669A16004FC34D /* LaunchScreen.storyboard */,
 				94BB228B28669A16004FC34D /* Info.plist */,
@@ -202,8 +191,18 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				B30028092CF59E1D00DA98BB /* Home */,
+				B300280A2CF59E2800DA98BB /* Views */,
+				B300280B2CF59E3300DA98BB /* Extentions */,
+				B300280C2CF59E4900DA98BB /* MyTown */,
+				B300280D2CF59E5000DA98BB /* Chat */,
+				B300280E2CF59E5700DA98BB /* MyProfile */,
+				B30028112CF59E8A00DA98BB /* Detail */,
+			);
 			name = CarrotHomeTab;
 			packageProductDependencies = (
+				B300281B2CF5DE3400DA98BB /* Kingfisher */,
 			);
 			productName = CarrotHomeTab;
 			productReference = 94BB227A28669A15004FC34D /* CarrotHomeTab.app */;
@@ -278,6 +277,7 @@
 			);
 			mainGroup = 94BB227128669A15004FC34D;
 			packageReferences = (
+				B300281A2CF5DE3400DA98BB /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 94BB227B28669A15004FC34D /* Products */;
 			projectDirPath = "";
@@ -297,8 +297,6 @@
 			files = (
 				94BB228A28669A16004FC34D /* LaunchScreen.storyboard in Resources */,
 				94BB228728669A16004FC34D /* Assets.xcassets in Resources */,
-				B30027FA2CF44CE400DA98BB /* Detail.storyboard in Resources */,
-				B30027FE2CF45E0F00DA98BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,17 +323,9 @@
 			files = (
 				94BB227E28669A15004FC34D /* AppDelegate.swift in Sources */,
 				94A38E512868307C000691E1 /* ItemInfo.swift in Sources */,
-				B30028022CF45F0100DA98BB /* ChatViewController.swift in Sources */,
-				B30027F82CF44C3800DA98BB /* MainTabBarController.swift in Sources */,
-				B30027F62CF44C2800DA98BB /* MainNavigationController.swift in Sources */,
 				94BB228028669A15004FC34D /* SceneDelegate.swift in Sources */,
-				B30028082CF4717A00DA98BB /* UIBarButtonItem+CustomView.swift in Sources */,
-				B30028042CF45F0900DA98BB /* MyProfileViewController.swift in Sources */,
 				9402EE1728673FB100D33FDD /* Publisher+Utils.swift in Sources */,
-				B30028062CF4640300DA98BB /* CustomBarItem.swift in Sources */,
 				9402EE1128673D9C00D33FDD /* NetworkService.swift in Sources */,
-				B30027F42CF44C0C00DA98BB /* HomeViewController.swift in Sources */,
-				B30028002CF45EF900DA98BB /* MyTownViewController.swift in Sources */,
 				9402EE1228673D9C00D33FDD /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B300281A2CF5DE3400DA98BB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B300281B2CF5DE3400DA98BB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B300281A2CF5DE3400DA98BB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 94BB227228669A15004FC34D /* Project object */;
 }
