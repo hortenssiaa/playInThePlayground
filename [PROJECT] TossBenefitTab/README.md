@@ -38,7 +38,7 @@
 
 
 ### 새로 배운 코드
-- 특이사항 1) 네트워크 delay 상황 대비
+- 특이사항 1) 네트워크 delay 상황 대비 (simulate network like behavior)
 
 ```swift
 // ButtonBenefitViewModel.swift
@@ -91,7 +91,7 @@ func fetchDetails() {
 
 <br>
 
-- 특이사항 3) 네트워크 delay 되어, 뷰가 늦게 보여지는 상황
+- 특이사항 3) 네트워크 delay 되어, 뷰가 늦게 보여지는 상황 (simulate network like behavior)
 ```swift
 // BenefitListViewModel.swift
 @Published var todaySectionItems: [AnyHashable] = []
