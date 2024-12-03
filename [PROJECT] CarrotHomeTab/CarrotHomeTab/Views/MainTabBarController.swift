@@ -50,6 +50,7 @@ class MainTabBarController: UITabBarController {
             
             navigationItem.leftBarButtonItem = titleItem
             navigationItem.rightBarButtonItems = [searchItem, feedItem]
+            navigationItem.backButtonDisplayMode = .minimal // 1) backbuttondisplaymode 2) MainNavigationController > backindicator 설정
             
         case is MyTownViewController:
             let titleConfig = CustomBarItemConfiguration(
@@ -65,6 +66,7 @@ class MainTabBarController: UITabBarController {
             
             navigationItem.leftBarButtonItem = titleItem
             navigationItem.rightBarButtonItems = [feedItem]
+            navigationItem.backButtonDisplayMode = .minimal // 1) backbuttondisplaymode 2) MainNavigationController > backindicator 설정
             
         case is ChatViewController:
             let titleConfig = CustomBarItemConfiguration(
@@ -81,6 +83,7 @@ class MainTabBarController: UITabBarController {
             
             navigationItem.leftBarButtonItem = titleItem
             navigationItem.rightBarButtonItems = [searchItem]
+            navigationItem.backButtonDisplayMode = .minimal // 1) backbuttondisplaymode 2) MainNavigationController > backindicator 설정
             
         case is MyProfileViewController:
             let titleConfig = CustomBarItemConfiguration(
@@ -97,6 +100,7 @@ class MainTabBarController: UITabBarController {
             
             navigationItem.leftBarButtonItem = titleItem
             navigationItem.rightBarButtonItems = [settingItem]
+            navigationItem.backButtonDisplayMode = .minimal // 1) backbuttondisplaymode 2) MainNavigationController > backindicator 설정
             
         default:
             let titleConfig = CustomBarItemConfiguration(
@@ -106,6 +110,7 @@ class MainTabBarController: UITabBarController {
             let titleItem = UIBarButtonItem.generate(with: titleConfig)
             
             navigationItem.leftBarButtonItem = titleItem
+            navigationItem.backButtonDisplayMode = .minimal // 1) backbuttondisplaymode 2) MainNavigationController > backindicator 설정
         }
     }
 }

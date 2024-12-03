@@ -37,6 +37,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        configurationNavigationBar()
         bind()
         viewModel.fetch()
     }
@@ -57,7 +58,7 @@ class DetailViewController: UIViewController {
                 
                 self.itemTitle.text = item!.item.title
                 self.itemDescription.text = item!.details.description
-                self.itemPriceLable.text = "\(item!.item.price)원"
+                self.itemPriceLable.text = "\(self.formatNumber(item!.item.price))원"
                 self.itemThumbnail.kf.setImage(
                     with: URL(string: (item!.details.itemThumbnail[0])),
                     placeholder: UIImage(named: "tv")
@@ -68,5 +69,29 @@ class DetailViewController: UIViewController {
     private func setupUI() {
         self.userThumbnail.layer.cornerRadius = self.userThumbnail.bounds.width / 2
         self.userThumbnail.layer.masksToBounds = true
+    }
+    
+    private func configurationNavigationBar() {
+        let moreConfig = CustomBarItemConfiguration(
+            image: UIImage(systemName: "ellipsis"),
+            handler: { print("---> more tapped") }
+        )
+        let moreItem = UIBarButtonItem.generate(with: moreConfig, width: 30)
+        
+        let shareConfig = CustomBarItemConfiguration(
+            image: UIImage(systemName: "square.and.arrow.up"),
+            handler: { print("---> share tapped") }
+        )
+        let shareItem = UIBarButtonItem.generate(with: shareConfig, width: 30)
+        
+        navigationItem.rightBarButtonItems = [moreItem, shareItem]
+    }
+}
+
+extension DetailViewController {
+    private func formatNumber(_ price: Int) -> String {
+        var formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter.string(from: NSNumber(integerLiteral: price)) ?? ""
     }
 }
