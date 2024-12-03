@@ -75,6 +75,7 @@ class HomeViewController: UIViewController {
             .sink { ItemInfo in
                 var sb = UIStoryboard(name: "Detail", bundle: nil)
                 var vc = sb.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+                vc.viewModel = DetailViewModel(network: NetworkService(configuration: .default), item: ItemInfo)
                 self.navigationController?.pushViewController(vc, animated: true)
             }.store(in: &subscriptions)
     }
@@ -89,7 +90,7 @@ class HomeViewController: UIViewController {
         group.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 0, trailing: 20)
         
         let section = NSCollectionLayoutSection(group: group)
-//        section.interGroupSpacing = spacing
+        section.interGroupSpacing = spacing
         return UICollectionViewCompositionalLayout(section: section)
     }
 }

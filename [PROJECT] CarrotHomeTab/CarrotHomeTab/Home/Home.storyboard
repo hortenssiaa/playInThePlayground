@@ -41,10 +41,11 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49Y-FZ-KBv">
                                                             <rect key="frame" x="0.0" y="0.0" width="140" height="110"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DHZ-a8-0n1">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DHZ-a8-0n1">
                                                                     <rect key="frame" x="0.0" y="-5" width="120" height="120"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="120" id="CkD-8I-oJ4"/>
+                                                                        <constraint firstAttribute="width" secondItem="DHZ-a8-0n1" secondAttribute="height" multiplier="1:1" id="ETA-Rf-Oc9"/>
                                                                         <constraint firstAttribute="width" constant="120" id="MUM-LV-F5T"/>
                                                                     </constraints>
                                                                 </imageView>
@@ -150,11 +151,21 @@
                                                         <constraint firstAttribute="trailing" secondItem="gjH-Ih-lwK" secondAttribute="trailing" id="zKQ-68-1Yt"/>
                                                     </constraints>
                                                 </stackView>
+                                                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26E-SG-JTZ">
+                                                    <rect key="frame" x="0.0" y="127" width="393" height="1"/>
+                                                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Xnz-aw-XXo"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="VRd-tm-dv8" secondAttribute="trailing" id="AML-CM-vGn"/>
+                                                <constraint firstAttribute="trailing" secondItem="26E-SG-JTZ" secondAttribute="trailing" id="Sae-0g-Zq7"/>
                                                 <constraint firstAttribute="bottom" secondItem="VRd-tm-dv8" secondAttribute="bottom" constant="18" id="dYS-gi-HIa"/>
                                                 <constraint firstItem="VRd-tm-dv8" firstAttribute="leading" secondItem="Khc-7w-ZZd" secondAttribute="leading" id="e96-kv-UdA"/>
+                                                <constraint firstItem="26E-SG-JTZ" firstAttribute="leading" secondItem="Khc-7w-ZZd" secondAttribute="leading" id="eMp-MV-Fy6"/>
+                                                <constraint firstAttribute="bottom" secondItem="26E-SG-JTZ" secondAttribute="bottom" id="sac-gT-b4N"/>
                                                 <constraint firstItem="VRd-tm-dv8" firstAttribute="top" secondItem="Khc-7w-ZZd" secondAttribute="top" id="t1I-5u-d9C"/>
                                             </constraints>
                                         </collectionViewCellContentView>

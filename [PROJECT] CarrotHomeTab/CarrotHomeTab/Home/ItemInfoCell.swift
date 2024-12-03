@@ -34,7 +34,8 @@ class ItemInfoCell: UICollectionViewCell {
         let url = URL(string: items.thumbnailURL)!
         self.thumbnail.kf.setImage(
             with: url,
-            placeholder: UIImage(systemName: "hands.sparkles.fill")
+            placeholder: UIImage(named: "tv")
+//            placeholder: UIImage(systemName: "hands.sparkles.fill")
         )
     }
     
